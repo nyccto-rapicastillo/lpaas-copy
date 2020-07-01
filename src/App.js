@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import LandingPageService from './LandingPageService';
+
+import 'uswds/dist/js/uswds.js';
+import 'uswds/dist/css/uswds.css';
 
 function App() {
+
+  // useEffect(() => {
+  //   const script = document.createElement('script');
+  
+  //   script.src = "https://use.typekit.net/foobar.js";
+  //   script.async = true;
+  
+  //   document.body.appendChild(script);
+  
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   }
+  // }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LandingPageService />
   );
 }
 
