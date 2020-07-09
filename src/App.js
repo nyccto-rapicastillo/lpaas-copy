@@ -1,8 +1,11 @@
+
+
 import React, { useEffect } from 'react';
 import LandingPageService from './LandingPageService';
 
 import 'uswds/dist/js/uswds.js';
 import 'uswds/dist/css/uswds.css';
+import './style/styles.scss';
 
 function App() {
 
