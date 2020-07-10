@@ -1,3 +1,129 @@
-$theme-color-primary-darker: green;
+/*** Adjusted color swatches ***/
+// Adjusted USWDS swatches
+$theme-color-primary-darker: #64307E;
+$theme-color-accent-cool: #E070A3;
+// $theme-color-primary: #D93778;
+
+// New USWDS swatches
+$unity-orange-adj: #E07616;
+$unity-blue-adj: #6ACDE8;
+$unity-red-adj: #D34200;
+$unity-yellow: #FAE64C;
+
+/*** Adjusted components ***/
+$theme-typeface-tokens: (
+  barlow-condensed: (
+    display-name: "Barlow Condensed",
+    cap-height: 364px
+  )
+) !default;
+
+$theme-font-barlow-condensed: (
+  dir: 'barlowcondensed',
+  roman: (
+    100: false,
+    200: false,
+    300: 'BarlowCondensed-Light',
+    400: 'BarlowCondensed-Regular',
+    500: false,
+    600: false,
+    700: 'BarlowCondensed-Bold',
+    800: false,
+    900: false,
+  ),
+  italic: (
+    100: false,
+    200: false,
+    300: 'BarlowCondensed-LightItalic',
+    400: 'BarlowCondensed-Italic',
+    500: false,
+    600: false,
+    700: 'BarlowCondensed-BoldItalic',
+    800: false,
+    900: false,
+  ),
+);
+
+$theme-font-type-cond: 'barlow-condensed';
+
+// Change gov text to white
+.usa-banner__header-text {
+    color: white;
+}
+
+// Adjust color & font of title text
+.usa-logo__text {
+    color: #64307E;
+    font-family: $theme-font-type-cond;
+    font-style: normal; 
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+
+// Change navbar to blue
+.usa-navbar {
+    background-color: $unity-blue-adj;
+}
+
+// Change top section to yellow
+.grid-container.usa-section {
+    background-color: $unity-yellow;
+}
+
+// Change bottom section to blue
+#test-section-id.usa-section {
+    background-color: $unity-blue-adj;
+}
+
+.font-heading-xl {
+    color: $theme-color-primary-darker;
+    font-family: "barlow-condensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+}
+
+.usa-graphic-list__heading {
+    font-family: "barlow-condensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 32px;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+}
 
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
+
+// Make gov banner purple
+.usa-banner {
+    background-color: $theme-color-primary-darker;
+}
+
+// Make hero callout text blue
+.usa-hero__heading--alt {
+    color: $unity-blue-adj;
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+
+// .usa-button {
+//     background-color: $theme-color-primary;
+// }
+
+// .usa-button:hover {
+//     background-color: $unity-orange-adj;
+// }
+
+// .usa-button:active {
+//     background-color: $unity-red-adj;
+// }
