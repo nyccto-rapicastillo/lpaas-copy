@@ -10,7 +10,7 @@ export default (props) => (
             <img class="usa-banner__header-flag" src="/assets/img/us_flag_small.png" alt="U.S. flag"/>
           </div> */}
           <div class="grid-col-fill tablet:grid-col-auto">
-            <p class="usa-banner__header-text">An official website of the United States government</p>
+            <p class="usa-banner__header-text">An official website of NYC.gov</p>
             {/* <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p> */}
           </div>
           {/* <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
@@ -48,7 +48,7 @@ export default (props) => (
   <header class="usa-header usa-header--extended">
     <div class="usa-navbar">
       <div class="usa-logo" id="extended-logo">
-        <em class="usa-logo__text"><a href="/" title="Home" aria-label="Home">Project title</a></em>
+        <em class="usa-logo__text"><a href="/" title="Home" aria-label="Home">The NYC Unity Project Guide to LGBTQI+ Workplace Inclusivity</a></em>
       </div>
       <button class="usa-menu-btn">Menu</button>
     </div>
@@ -59,9 +59,9 @@ export default (props) => (
         </button>
         <ul class="usa-nav__primary usa-accordion">
           <li class="usa-nav__primary-item">
-            <button class="usa-accordion__button usa-nav__link  usa-current">
-              <span>Current section</span>
-            </button>
+            <a class="usa-nav__link  usa-current">
+              <span>Home</span>
+            </a>
             {/* <ul id="extended-nav-section-one" class="usa-nav__submenu">
               <li class="usa-nav__submenu-item"><a href="#" class=""> Navigation link</a></li>
               <li class="usa-nav__submenu-item"><a href="#" class=""> Navigation link</a></li>
@@ -69,9 +69,9 @@ export default (props) => (
             </ul> */}
           </li>
           <li class="usa-nav__primary-item">
-            <button class="usa-accordion__button usa-nav__link">
-              <span>Section</span>
-            </button>
+            <a class=" usa-nav__link">
+              <span>About</span>
+            </a>
             {/* <ul id="extended-nav-section-two" class="usa-nav__submenu">
               <li class="usa-nav__submenu-item"><a href="#" class=""> Navigation link</a></li>
               <li class="usa-nav__submenu-item"><a href="#" class=""> Navigation link</a></li>
@@ -80,7 +80,7 @@ export default (props) => (
           </li>
           <li class="usa-nav__primary-item">
             <a class="usa-nav__link" href="javascript:void(0)">
-              <span>Simple link</span>
+              <span>Contact</span>
             </a>
           </li>
         </ul>
@@ -100,15 +100,14 @@ export default (props) => (
   </header>
 
     
-  <main id="main-content">
+  <main id="main-content" class="yellow-bg">
     <section class="usa-hero" aria-label="Introduction">
       <div class="grid-container">
         <div class="usa-hero__callout">
           <h1 class="usa-hero__heading">
-            <span class="usa-hero__heading--alt">Hero callout:</span>Bring attention to a project priority
+            <span class="usa-hero__heading--alt">Work It, NYC<br/><span class="pink-color">A Guide to LGBTQI+ Workplace Inclusivity</span> </span>
           </h1>
-          <p>Support the callout with some short explanatory text. You don’t need more than a couple of sentences.</p>
-          <a class="usa-button" href="javascript:void(0)">Call to action</a>
+          <a class="usa-button" href="javascript:void(0)">Download Report</a>
         </div>
      </div>
     </section>
@@ -116,11 +115,12 @@ export default (props) => (
     <section class="grid-container usa-section">
       <div class="grid-row grid-gap">
         <div class="tablet:grid-col-4">
-          <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">A tagline highlights your approach</h2>
+          <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">Building a Safe Space for All</h2>
         </div>
         <div class="tablet:grid-col-8 usa-prose">
-          <p>The tagline should inspire confidence and interest, focusing on the value that your overall approach offers to your audience. Use a heading typeface and keep your tagline to just a few words, and don’t confuse or mystify.</p>
-          <p>Use the right side of the grid to explain the tagline a bit more. What are your goals? How do you do your work? Write in the present tense, and stay brief here. People who are interested can find details on internal pages.</p>
+          <p>This manual speaks to workforce practitioners to ensure that LGBTQI+ program participants can get jobs in a welcoming environment. 
+            With awareness, preparation, and strategic interventions targeted to LGBTQI+ peoples' unique needs, workforce providers can deliver the resources 
+            and services needed to support LGBTQI+ people.</p>
         </div>
       </div>
     </section>
@@ -132,15 +132,19 @@ export default (props) => (
           <div class="usa-media-block tablet:grid-col">
             <img class="usa-media-block__img"  src="/assets/img/circle-124.png" alt="Alt text"/>
             <div class="usa-media-block__body">
-              <h2 class="usa-graphic-list__heading">Graphic headings can vary.</h2>
-              <p>Graphic headings can be used a few different ways, depending on what your landing page is for. Highlight your values, specific program areas, or results.</p>
+              <h2 class="usa-graphic-list__heading">Concepts and Vocabulary</h2>
+              <p>To serve the LGBTQI+ community well, you need to understand the different LGBTQI+ identities and
+                be familiar with LGBTQI+ terminology, to ensure your program uses the most respectful language.
+              </p>
             </div>
           </div>
           <div class="usa-media-block tablet:grid-col">
             <img class="usa-media-block__img"  src="/assets/img/circle-124.png" alt="Alt text"/>
             <div class="usa-media-block__body">
-              <h2 class="usa-graphic-list__heading">Stick to 6 or fewer words.</h2>
-              <p>Keep body text to about 30 words. They can be shorter, but try to be somewhat balanced across all four. It creates a clean appearance with good spacing.</p>
+              <h2 class="usa-graphic-list__heading">Obligations under the Law</h2>
+              <p>This chapter provides a concise guide to the legal obligations that organizations and employers have to LGBTQI+ people,
+                as well as resoures that are available to LGBTQI+ people.
+              </p>
             </div>
           </div>
         </div>
@@ -149,15 +153,20 @@ export default (props) => (
           <div class="usa-media-block tablet:grid-col">
             <img class="usa-media-block__img"  src="/assets/img/circle-124.png" alt="Alt text"/>
             <div class="usa-media-block__body">
-              <h2 class="usa-graphic-list__heading">Never highlight anything without a goal.</h2>
-              <p>For anything you want to highlight here, understand what your users know now, and what activity or impression you want from them after they see it.</p>
+              <h2 class="usa-graphic-list__heading">Building a Safer Space</h2>
+              <p>This chapter will touch on the importance of maintaing a trauma-informed lens in work with LGBTQI+ communities,
+                information for supporting many transgender, gender nonconforming, and non-binary (TGNCNB) program participants, and basic
+                tips on establishing an LGBTQI+-friendly ecosystem in your workforce program.
+              </p>
             </div>
           </div>
           <div class="usa-media-block tablet:grid-col">
             <img class="usa-media-block__img"  src="/assets/img/circle-124.png" alt="Alt text"/>
             <div class="usa-media-block__body">
-              <h2 class="usa-graphic-list__heading">Could also have 2 or 6.</h2>
-              <p>In addition to your goal, find out your users’ goals. What do they want to know or do that supports your mission? Use these headings to show those.</p>
+              <h2 class="usa-graphic-list__heading">Making Sure a Place is Safe</h2>
+              <p>This chapter will explain how to get information from employers and other referral sites, which includes asking pointed
+                questions about an employer's experiences with LGBTQI+ people and cultural competency training.
+              </p>
             </div>
           </div>
         </div>
