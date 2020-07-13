@@ -10,6 +10,7 @@ $unity-orange-adj: #E07616;
 $unity-blue-adj: #6ACDE8;
 $unity-red-adj: #D34200;
 $unity-yellow: #FAE64C;
+$unity-purple: #7E4E96;
 
 /*** Adjusted components ***/
 $theme-typeface-tokens: (
@@ -62,7 +63,6 @@ $theme-font-type-serif: "barlow-condensed";
 }
 
 
-
 // Change navbar to blue
 .usa-header {
     background-color: $unity-blue-adj;
@@ -78,6 +78,15 @@ $theme-font-type-serif: "barlow-condensed";
 
 .pink-color {
     color: $theme-color-accent-cool;
+}
+
+.blue-bg {
+    background-color: $unity-blue-adj;
+}
+
+.purple-bg {
+    background-color: $unity-purple;
+    color: white;
 }
 
 // Change bottom section to blue
@@ -145,4 +154,9 @@ $theme-font-type-serif: "barlow-condensed";
 
 .usa-button:active {
     background-color: $unity-red-adj;
+}
+
+.usa-footer__secondary-section {
+    background-color: $unity-purple;
+    color: white;
 }

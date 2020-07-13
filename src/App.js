@@ -1,7 +1,8 @@
 
 
 import React, { useEffect } from 'react';
-import LandingPageService from './LandingPageService';
+import Unity from './Unity';
+import Home from './containers/Home';
 
 import 'uswds/dist/js/uswds.js';
 // import 'uswds/dist/css/uswds.css';
@@ -25,7 +26,7 @@ function App() {
   // }, []);
 
   return (
-    <LandingPageService />
+    <Home/>
   );
 }
 
