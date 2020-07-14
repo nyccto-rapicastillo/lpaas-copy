@@ -10,7 +10,7 @@ export default function About() {
         <div>
             <GovBanner/>
 
-            <Header homeActive={false} aboutActive={true} contactActive={false}/>
+            <Header currentPage="about"/>
     
             <main id="main-content" class="bg-unity-yellow">
                 <Hero link="/" bgImg="bg-unity-about"/>

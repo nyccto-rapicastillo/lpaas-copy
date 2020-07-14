@@ -18,11 +18,11 @@ export default function Header(props) {
                             <img src="../assets/img/close.svg" role="img" alt="close"/>
                         </button>
                         <ul class="usa-nav__primary usa-accordion">
-                            <NavLink isActive={props.homeActive} link="/" label="Home" />
+                            <NavLink isActive={props.currentPage === "home"} link="/" label="Home" />
 
-                            <NavLink isActive={props.aboutActive} link="/about" label="About" />
+                            <NavLink isActive={props.currentPage === "about"} link="/about" label="About" />
 
-                            <NavLink isActive={props.contactActive} link="/contact" label="Contact" />
+                            <NavLink isActive={props.currentPage === "contact"} link="/contact" label="Contact" />
                         </ul>
                     </div>
                 </nav>

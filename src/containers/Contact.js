@@ -10,7 +10,7 @@ export default function Contact() {
         <div>
             <GovBanner/>
 
-            <Header homeActive={false} aboutActive={false} contactActive={true}/>
+            <Header currentPage="contact"/>
     
             <main id="main-content" class="bg-unity-yellow">
                 <Hero link="/" bgImg="bg-unity-contact"/>

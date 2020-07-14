@@ -12,7 +12,7 @@ export default function Home() {
         <div>
             <GovBanner/>
 
-            <Header homeActive={true} aboutActive={false} contactActive={false}/>
+            <Header currentPage="home"/>
     
             <main id="main-content" class="bg-unity-yellow">
                 <Hero link="/" bgImg="bg-unity-home"/>

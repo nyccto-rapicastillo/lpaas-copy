@@ -14,7 +14,7 @@ $unity-purple: #7E4E96;
 // Setting up the Barlow Condensed font 
 $theme-typeface-tokens: (
   barlow-condensed: (
-    display-name: "Barlow Condensed",
+    display-name: "BarlowCondensed",
     cap-height: 364px
   )
 ) !default;
@@ -92,7 +92,7 @@ $theme-font-type-serif: "barlow-condensed";
 }
 
 .font-barlow-heading {
-    font-family: BarlowCondensed;
+    font-family: BarlowCondensed !important;
     font-style: normal;
     font-weight: bold;
     font-size: 27px;
@@ -102,7 +102,7 @@ $theme-font-type-serif: "barlow-condensed";
 }
 
 .font-barlow-logo {
-    font-family: BarlowCondensed;
+    font-family: BarlowCondensed !important;
     font-style: normal; 
     font-weight: bold;
     font-size: 32px;

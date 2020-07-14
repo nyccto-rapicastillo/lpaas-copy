@@ -1,12 +1,14 @@
 import React from 'react';
 import GridSquare from './GridSquare';
+import CircleImg1 from "../assets/img/GettyImages-618025276_CMYK 1.png"
+
 
 export default function Grid() {
     return(
         <section class="usa-graphic-list usa-section usa-section--dark">
             <div class="grid-container">
                 <div class="usa-graphic-list__row grid-row grid-gap">
-                    <GridSquare img="GettyImages-618025276_CMYK 1.png" altText="Alt Text" heading="Concepts and Vocabulary" text="To serve the LGBTQI+ community well, you need to understand the different LGBTQI+ identities and
+                    <GridSquare img={CircleImg1} altText="Alt Text" heading="Concepts and Vocabulary" text="To serve the LGBTQI+ community well, you need to understand the different LGBTQI+ identities and
                                 be familiar with LGBTQI+ terminology, to ensure your program uses the most respectful language."/>
                     
                     <GridSquare img="../assets/img/circle-124.png" altText="Alt text" heading="Obligations under the Law" text="This chapter provides a concise guide to the legal obligations that organizations and employers have to LGBTQI+ people,
