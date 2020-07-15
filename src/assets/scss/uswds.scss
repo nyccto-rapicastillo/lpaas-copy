@@ -54,7 +54,7 @@ $theme-font-type-cond-custom-src: $theme-font-barlow-condensed !default;
 
 // $theme-font-serif-custom-stack: BarlowCondensed;
 $theme-font-sans-custom-stack: BarlowCondensed;
-// $theme-font-type-serif: "barlow-condensed";
+$theme-font-type-serif: "barlow-condensed";
 
 .bg-white {
     background-color: white;
@@ -136,6 +136,35 @@ $theme-font-sans-custom-stack: BarlowCondensed;
 
 .bg-unity-contact {
     background-image: url("../img/_A3A3388_CMYK 1.png") !important;
+}
+
+.img-circular {
+    border-radius: 50%;
+}
+
+.agency-grid {
+    display: grid;
+    grid-gap: 50px;
+}
+
+.unity-logo-grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.nyccye-logo-grid {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.mf-logo-grid {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.mocto-logo-grid {
+    grid-column-start: 4;
+    grid-column-end: 5;
 }
 
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';

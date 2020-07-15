@@ -1,4 +1,9 @@
 import React from 'react';
+import FooterNav from './FooterNav';
+import UnityLogo from '../assets/img/nyc_unity_logo.png';
+import CYELogo from '../assets/img/NYCYE.png';
+import MayorsFundLogo from '../assets/img/mayorsfund.png';
+import MOCTOLogo from '../assets/img/MOCTO.png';
 
 export default function Footer(props) {
     let returnBgClass = "grid-container usa-footer__return-to-top "+props.returnBg;
@@ -9,74 +14,30 @@ export default function Footer(props) {
                 <div class={returnBgClass}>
                     <a href="#">Return to top</a>
                 </div>
-                <div class="usa-footer__primary-section">
-                    <nav class="usa-footer__nav" aria-label="Footer navigation">
-                        <ul class="grid-row grid-gap">
-                            <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
-                                <a class="usa-footer__primary-link" href="javascript:void(0);">Primary link</a>
-                            </li>
-                            <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
-                                <a class="usa-footer__primary-link" href="javascript:void(0);">Primary link</a>
-                            </li>
-                            <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
-                                <a class="usa-footer__primary-link" href="javascript:void(0);">Primary link</a>
-                            </li>
-                            <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
-                                <a class="usa-footer__primary-link" href="javascript:void(0);">Primary link</a>
-                            </li>
-                            <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
-                                <a class="usa-footer__primary-link" href="javascript:void(0);">Primary link</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                
+                <FooterNav
+                link1="/" label1="Home"
+                link2="/" label2="About"
+                link3="/" label3="Contact"
+                link4="/" label4="Privacy Policy"
+                link5="/" label5="Terms of Use"/>
 
                 <div class="usa-footer__secondary-section bg-unity-purple text-white ">
                     <div class="grid-container bg-unity-purple text-white">
                         <div class="grid-row grid-gap">
-                            <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
-                                <div class="mobile-lg:grid-col-auto">
-                                    <img class="usa-footer__logo-img" src="/assets/img/logo-img.png" alt=""/>
-                                </div>
-                                <div class="mobile-lg:grid-col-auto">
-                                    <h3 class="usa-footer__logo-heading">Name of Agency</h3>
-                                </div>
-                            </div>
                             <div class="usa-footer__contact-links mobile-lg:grid-col-6">
-                                <div class="usa-footer__social-links grid-row grid-gap-1">
-                                    <div class="grid-col-auto">
-                                        <a class="usa-social-link usa-social-link--facebook" href="javascript:void(0);">
-                                        <span>Facebook</span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-col-auto">
-                                        <a class="usa-social-link usa-social-link--twitter" href="javascript:void(0);">
-                                        <span>Twitter</span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-col-auto">
-                                        <a class="usa-social-link usa-social-link--youtube" href="javascript:void(0);">
-                                        <span>YouTube</span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-col-auto">
-                                        <a class="usa-social-link usa-social-link--rss" href="javascript:void(0);">
-                                        <span>RSS</span>
-                                        </a>
-                                    </div>
+                                <div class="agency-grid">
+                                    <img class="unity-logo-grid" src={UnityLogo} alt=""/>
+
+                                    <img class="nycce-logo-grid" src={CYELogo} alt=""/>
+
+                                    <img class="mf-logo-grid" src={MayorsFundLogo} alt=""/>
+
+                                    <img class="mocto-logo-grid" src={MOCTOLogo} alt=""/>
                                 </div>
-                                <h3 class="usa-footer__contact-heading">Agency Contact Center</h3>
-                                <address class="usa-footer__address">
-                                    <div class="usa-footer__contact-info grid-row grid-gap">
-                                        <div class="grid-col-auto">
-                                            <a href="tel:1-800-555-5555">(800) CALL-GOVT</a>
-                                        </div>
-                                        <div class="grid-col-auto">
-                                        <a href="mailto:info@agency.gov">info@agency.gov</a>
-                                        </div>
-                                    </div>
-                                </address>
                             </div>
+                            <p>© 2020 City of New York. All Rights Reserved.
+                            <br/>NYC is a trademark and service mark of the City of New York</p>
                         </div>
                     </div>
                 </div>
