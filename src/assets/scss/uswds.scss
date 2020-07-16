@@ -154,7 +154,7 @@ $theme-font-type-serif: "barlow-condensed";
     max-height: 80px;
     max-width: 220px;
     margin-left: 50px;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .agency-adjustment {
@@ -163,7 +163,7 @@ $theme-font-type-serif: "barlow-condensed";
 
 .agency-adjustment-first {
     margin-left: 0px;
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
 .footer-text {
@@ -171,6 +171,12 @@ $theme-font-type-serif: "barlow-condensed";
     font-weight: bold;
     font-size: 12px;
     line-height: 18px;
+}
+
+.footer-padding {
+    padding-left: 220px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
