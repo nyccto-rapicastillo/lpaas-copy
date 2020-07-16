@@ -143,42 +143,37 @@ $theme-font-type-serif: "barlow-condensed";
 }
 
 .agency-grid {
-    display: grid;
-    grid-gap: 50px;
+    display: flex;
+    flex-direction: row column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
-.unity-logo-grid {
-    grid-column-start: 1;
-    grid-column-end: 2;
+.agency-item {
+    max-height: 80px;
+    max-width: 220px;
+    margin-left: 50px;
+    margin-right: 20px;
 }
 
-.nyccye-logo-grid {
-    grid-column-start: 2;
-    grid-column-end: 3;
+.agency-adjustment {
+    padding-top: 40px;
 }
 
-.mf-logo-grid {
-    grid-column-start: 3;
-    grid-column-end: 4;
+.agency-adjustment-first {
+    margin-left: 0px;
+    margin-right: 40px;
 }
 
-.mocto-logo-grid {
-    grid-column-start: 4;
-    grid-column-end: 5;
+.footer-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
-
-// Make hero callout text blue
-// .usa-hero__heading--alt {
-//     color: $unity-blue-adj;
-//     font-family: BarlowCondensed;
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 32px;
-//     line-height: 38px;
-//     text-transform: uppercase;
-// }
 
 .usa-button {
     background-color: $unity-pink;
@@ -191,8 +186,3 @@ $theme-font-type-serif: "barlow-condensed";
 .usa-button:active {
     background-color: $unity-red-adj;
 }
-
-// .usa-footer__secondary-section {
-//     background-color: $unity-purple;
-//     color: white;
-// }

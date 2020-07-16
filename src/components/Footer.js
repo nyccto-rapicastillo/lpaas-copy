@@ -24,20 +24,30 @@ export default function Footer(props) {
 
                 <div class="usa-footer__secondary-section bg-unity-purple text-white ">
                     <div class="grid-container bg-unity-purple text-white">
-                        <div class="grid-row grid-gap">
-                            <div class="usa-footer__contact-links mobile-lg:grid-col-6">
-                                <div class="agency-grid">
-                                    <img class="unity-logo-grid" src={UnityLogo} alt=""/>
+                    <div class="agency-grid footer-text">
+                                    <img class="agency-item agency-adjustment-first" src={UnityLogo} alt=""/>
 
-                                    <img class="nycce-logo-grid" src={CYELogo} alt=""/>
+                                    <div class="agency-item">
+                                        <p>A collaboration of</p>
+                                        <img src={CYELogo} alt=""/>
+                                    </div>
+                                    
+                                    <img class="agency-item agency-adjustment" src={MayorsFundLogo} alt=""/>
 
-                                    <img class="mf-logo-grid" src={MayorsFundLogo} alt=""/>
-
-                                    <img class="mocto-logo-grid" src={MOCTOLogo} alt=""/>
+                                    <div class="agency-item">
+                                        <p>Website created with support of</p>
+                                        <img src={MOCTOLogo} alt=""/>
+                                    </div> 
                                 </div>
-                            </div>
-                            <p>© 2020 City of New York. All Rights Reserved.
+                            {/* <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+                                
+                            </div> */}
+
+                            <p/>
+                            
+                            <p class="footer-text">© 2020 City of New York. All Rights Reserved.
                             <br/>NYC is a trademark and service mark of the City of New York</p>
+                        <div class="grid-row grid-gap">
                         </div>
                     </div>
                 </div>
