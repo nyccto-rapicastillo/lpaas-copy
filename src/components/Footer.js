@@ -17,15 +17,15 @@ export default function Footer(props) {
 
             <FooterNav
             link1="/" label1="Home"
-            link2="/" label2="About"
-            link3="/" label3="Contact"
-            link4="/" label4="Privacy Policy"
-            link5="/" label5="Terms of Use"/>
+            link2="/about" label2="About"
+            link3="/contact" label3="Contact"
+            link4="https://www1.nyc.gov/home/privacy-policy.page" label4="Privacy Policy"
+            link5="https://www1.nyc.gov/home/terms-of-use.page" label5="Terms of Use"/>
 
-            <AgencyGrid bg="bg-unity-purple" text="text-white" logo1={UnityLogo}
-            logo2text="A collaboration of" logo2={CYELogo}
-            logo3={MayorsFundLogo}
-            logo4text="Website created with the support of" logo4={MOCTOLogo}
+            <AgencyGrid bg="bg-unity-purple" text="text-white" logo1={UnityLogo} logo1link="https://growingupnyc.cityofnewyork.us/generationnyc/topics/lgbtq/"
+            logo2text="A collaboration of" logo2={CYELogo} logo2link="https://cye.cityofnewyork.us/"
+            logo3={MayorsFundLogo} logo3link="https://www1.nyc.gov/site/fund/index.page"
+            logo4text="Website created with the support of" logo4={MOCTOLogo} logo4link="https://www1.nyc.gov/assets/cto/#/"
             trademarkText={["© 2020 City of New York. All Rights Reserved.",<br/>,"NYC is a trademark and service mark of the City of New York"]}/>
 
         </footer>   

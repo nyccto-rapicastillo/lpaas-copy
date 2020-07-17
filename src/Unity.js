@@ -51,10 +51,10 @@ export default (props) => (
               heroLink="/" heroBg="bg-unity-contact"
               heading1="Contact us"
               text1={["To learn more about this project and the partners, please find our information below. We welcome your thoughts and feedback.", 
-              <div><p><strong>NYC Unity Project</strong><br/><a href="https://nyc.gov/unityproject">nyc.gov/unityproject</a>
+              <div><p><strong>NYC Unity Project</strong><br/><a href="https://growingupnyc.cityofnewyork.us/generationnyc/topics/lgbtq/">https://growingupnyc.cityofnewyork.us/generationnyc/topics/lgbtq/</a>
               <br/>Twitter: <a href="https://twitter.com/NYCUnityProject">@NYCUnityProject</a>
               </p><b>NYC Center for Youth Employment</b>
-              <br/><a href="https://nyc.gov/cye">nyc.gov/cye</a>
+              <br/><a href="https://cye.cityofnewyork.us/">https://cye.cityofnewyork.us/</a>
               <br/>Twitter: <a href="https://twitter.com/NYCCYE">@NYCCYE</a></div>]}
               buttonPresent={false}
               footerBg="bg-unity-blue"/>

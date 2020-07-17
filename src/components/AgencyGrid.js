@@ -2,26 +2,27 @@ import React from 'react';
 
 export default function AgencyGrid(props) {
     let styleMods = props.bg + " " + props.text;
-    let footerClassName = "usa-footer__secondary-section" + styleMods;
-    let gridClassName = "grid-cotainer footer-padding " + styleMods;
+    let footerClassName = "usa-footer__secondary-section " + styleMods;
+    let gridClassName = "grid-cotainer " + styleMods;
 
     return(
-    <div class={footerClassName}>
+    <div class="grid-row grid-gap bg-unity-purple">
+        <div class={footerClassName}>
         <div class={gridClassName}>
             <div class="grid-row grid-gap">
                 <div class="agency-grid footer-text">
-                    <img class="agency-item agency-adjustment-first" src={props.logo1} alt=""/>
+                    <a href={props.logo1link}><img class="agency-item agency-adjustment-first" src={props.logo1} alt=""/></a>
 
                     <div class="agency-item">
                         <p>{props.logo2text}</p>
-                        <img src={props.logo2} alt=""/>
+                        <a href={props.logo2link}><img src={props.logo2} alt=""/></a>
                     </div>
                                 
-                    <img class="agency-item agency-adjustment" src={props.logo3} alt=""/>
+                    <a href={props.logo3link}><img class="agency-item agency-adjustment" src={props.logo3} alt=""/></a>
 
                     <div class="agency-item">
                         <p>{props.logo4text}</p>
-                        <img src={props.logo4} alt=""/>
+                        <a href={props.logo4link}><img src={props.logo4} alt=""/></a>
                     </div> 
                 </div>
 
@@ -30,6 +31,8 @@ export default function AgencyGrid(props) {
                 <p class="footer-text">{props.trademarkText}</p>
             </div>
         </div>    
+    </div>
+
     </div>
     );
 }
