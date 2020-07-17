@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 export default function Hero(props) {
     let imgClassName = "usa-hero "+props.bgImg
@@ -12,7 +13,7 @@ export default function Hero(props) {
                             <br/><span class="text-accent-cool">A Guide to LGBTQI+ Workplace Inclusivity</span> 
                             </span>
                         </h1>
-                        <a class="usa-button bg-unity-pink" href={props.link}>Download Report</a>
+                        <Button buttonActive={true} buttonLink={props.link} buttonText="Download Report"/>
                     </div>
                 </div>
             </section>
