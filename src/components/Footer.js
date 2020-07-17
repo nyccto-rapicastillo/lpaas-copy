@@ -14,7 +14,7 @@ export default function Footer(props) {
             <div class={returnBgClass}>
                 <a href="#">Return to top</a>
             </div>
-            
+
             <FooterNav
             link1="/" label1="Home"
             link2="/" label2="About"
