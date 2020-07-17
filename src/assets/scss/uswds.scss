@@ -92,7 +92,7 @@ $theme-font-type-serif: "barlow-condensed";
 }
 
 .font-barlow-heading {
-    font-family: BarlowCondensed !important;
+    font-family: BarlowCondensed;
     font-style: normal;
     font-weight: bold;
     font-size: 27px;
@@ -102,7 +102,7 @@ $theme-font-type-serif: "barlow-condensed";
 }
 
 .font-barlow-logo {
-    font-family: BarlowCondensed !important;
+    font-family: BarlowCondensed;
     font-style: normal; 
     font-weight: bold;
     font-size: 32px;
@@ -174,9 +174,8 @@ $theme-font-type-serif: "barlow-condensed";
 }
 
 .footer-padding {
-    padding-left: 220px;
+    margin-left: 220px;
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
