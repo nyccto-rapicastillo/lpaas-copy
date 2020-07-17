@@ -80,8 +80,7 @@ $theme-font-type-serif: "barlow-condensed";
     background-color: $unity-purple !important;
 }
 
-.font-heading-xl {
-    color: $theme-color-primary-darker;
+.font-barlow-heading {
     font-family: BarlowCondensed;
     font-style: normal;
     font-weight: bold;
@@ -91,7 +90,7 @@ $theme-font-type-serif: "barlow-condensed";
     text-transform: uppercase;
 }
 
-.font-barlow-heading {
+.font-barlow-title {
     font-family: BarlowCondensed;
     font-style: normal;
     font-weight: bold;
