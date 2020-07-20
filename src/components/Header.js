@@ -8,7 +8,7 @@ export default function Header(props) {
             <header class="usa-header usa-header--extended bg-unity-blue">
                 <div class="usa-navbar">
                     <div class="usa-logo" id="extended-logo">
-                        <em class="usa-logo__text"><a href="/" title="Home" aria-label="Home" class="text-primary-darker font-barlow-logo">The NYC Unity Project Guide to LGBTQI+ Workplace Inclusivity</a></em>
+                        <em class="usa-logo__text"><a href="/" title="Home" aria-label="Home" class="text-primary-darker text-barlow-logo">The NYC Unity Project Guide to LGBTQI+ Workplace Inclusivity</a></em>
                     </div>
                     <button class="usa-menu-btn">Menu</button>
                 </div>

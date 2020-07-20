@@ -8,7 +8,7 @@ export default function Hero(props) {
             <div class="grid-container">
                 <div class="usa-hero__callout">
                     <h1 class="usa-hero__heading">
-                        <span class="usa-hero__heading--alt font-barlow-logo text-unity-blue">Work It, NYC
+                        <span class="usa-hero__heading--alt text-barlow-logo text-unity-blue">Work It, NYC
                         <br/><span class="text-accent-cool">A Guide to LGBTQI+ Workplace Inclusivity</span> 
                         </span>
                     </h1>

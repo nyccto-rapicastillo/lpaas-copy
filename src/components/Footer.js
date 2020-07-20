@@ -25,7 +25,7 @@ export default function Footer(props) {
             <AgencyGrid bg="bg-unity-purple" text="text-white" logo1={UnityLogo} logo1link="https://growingupnyc.cityofnewyork.us/generationnyc/topics/lgbtq/"
             logo2text="A collaboration of" logo2={CYELogo} logo2link="https://cye.cityofnewyork.us/"
             logo3={MayorsFundLogo} logo3link="https://www1.nyc.gov/site/fund/index.page"
-            logo4text="Website created with the support of" logo4={MOCTOLogo} logo4link="https://www1.nyc.gov/assets/cto/#/"
+            logo4text="Website created with the support of" logo4={MOCTOLogo} logo4link="http://nyc.gov/cto"
             trademarkText={["© 2020 City of New York. All Rights Reserved.",<br/>,"NYC is a trademark and service mark of the City of New York"]}/>
 
         </footer>   

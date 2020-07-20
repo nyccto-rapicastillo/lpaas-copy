@@ -50,10 +50,10 @@ $theme-font-barlow-condensed: (
     src: url(../fonts/barlowcondensed/BarlowCondensed-Bold.ttf);
 }
 
-$theme-font-type-cond-custom-src: $theme-font-barlow-condensed !default;
+// $theme-font-type-cond-custom-src: $theme-font-barlow-condensed !default;
 
 // $theme-font-serif-custom-stack: BarlowCondensed;
-$theme-font-sans-custom-stack: BarlowCondensed;
+// $theme-font-sans-custom-stack: BarlowCondensed;
 $theme-font-type-serif: "barlow-condensed";
 
 .bg-white {
@@ -80,7 +80,7 @@ $theme-font-type-serif: "barlow-condensed";
     background-color: $unity-purple !important;
 }
 
-.font-barlow-heading {
+.text-barlow-heading {
     font-family: BarlowCondensed;
     font-style: normal;
     font-weight: bold;
@@ -90,7 +90,7 @@ $theme-font-type-serif: "barlow-condensed";
     text-transform: uppercase;
 }
 
-.font-barlow-title {
+.text-barlow-title {
     font-family: BarlowCondensed;
     font-style: normal;
     font-weight: bold;
@@ -100,7 +100,7 @@ $theme-font-type-serif: "barlow-condensed";
     text-transform: uppercase;
 }
 
-.font-barlow-logo {
+.text-barlow-logo {
     font-family: BarlowCondensed;
     font-style: normal; 
     font-weight: bold;
