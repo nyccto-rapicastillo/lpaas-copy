@@ -50,6 +50,11 @@ $theme-font-barlow-condensed: (
     src: url(../fonts/barlowcondensed/BarlowCondensed-Bold.ttf);
 }
 
+@font-face {
+    font-family: PublicSans;
+    src: url(../fonts/public-sans/PublicSans-Light.ttf);
+}
+
 // $theme-font-type-cond-custom-src: $theme-font-barlow-condensed !default;
 
 // $theme-font-serif-custom-stack: BarlowCondensed;
@@ -177,6 +182,14 @@ $theme-font-type-serif: "barlow-condensed";
     padding-top: 30px;
 }
 
+.text-public-sans {
+    font-family: PublicSans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 145%;
+}
+
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
 
 .usa-button {
@@ -190,3 +203,4 @@ $theme-font-type-serif: "barlow-condensed";
 .usa-button:active {
     background-color: $unity-red-adj;
 }
+
