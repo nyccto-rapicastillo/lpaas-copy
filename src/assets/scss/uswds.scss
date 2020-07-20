@@ -183,7 +183,7 @@ $theme-font-type-serif: "barlow-condensed";
 }
 
 .text-public-sans {
-    font-family: PublicSans;
+    font-family: PublicSans !important;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

@@ -1,4 +1,5 @@
 import React from 'react';
+import NYCLogo from '../assets/img/nyc.png';
 
 export default function GovBanner() {
     return(
@@ -9,7 +10,7 @@ export default function GovBanner() {
                 <header class="usa-banner__header">
                     <div class="usa-banner__inner">
                         <div class="grid-col-fill tablet:grid-col-auto">
-                            <p class="usa-banner__header-text text-white">An official website of NYC.gov</p>
+                            <p class="usa-banner__header-text text-white"><img src={NYCLogo}/>      An official website of New York City government</p>
                         </div>
                     </div>
                 </header>
