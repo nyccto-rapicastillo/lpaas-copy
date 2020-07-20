@@ -184,10 +184,6 @@ $theme-font-type-serif: "barlow-condensed";
 
 .text-public-sans {
     font-family: PublicSans !important;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px !important;
-    line-height: 145%;
 }
 
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
