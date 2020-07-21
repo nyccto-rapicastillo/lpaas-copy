@@ -10,7 +10,7 @@ export default function GovBanner() {
                 <header class="usa-banner__header">
                     <div class="usa-banner__inner">
                         <div class="grid-col-fill tablet:grid-col-auto">
-                            <p class="usa-banner__header-text text-white"><img src={NYCLogo}/>      An official website of New York City government</p>
+                            <p class="usa-banner__header-text text-white"><img src={NYCLogo}/> An official website of New York City government</p>
                         </div>
                     </div>
                 </header>

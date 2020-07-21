@@ -2,6 +2,21 @@ import React from 'react';
 import NavLink from './NavLink';
 
 export default function Header(props) {
+
+    const NAV_LINKS = [
+        {link: "/", label: "Home"},
+        {link:"/about", label: "About"},
+        {link: "/contact", label: "Contact"}
+    ];
+
+    const navItems = NAV_LINKS.map((item) =>
+        <NavLink
+            isActive = {`${props.currentPage}` == `${item.label}`} 
+            link={item.link}
+            label={item.label}
+        />
+    );
+
     return (
         <div>
             <div class="usa-overlay"></div>
@@ -18,11 +33,7 @@ export default function Header(props) {
                             <img src="../assets/img/close.svg" role="img" alt="close"/>
                         </button>
                         <ul class="usa-nav__primary usa-accordion">
-                            <NavLink isActive={props.currentPage === "home"} link="/" label="Home" />
-
-                            <NavLink isActive={props.currentPage === "about"} link="/about" label="About" />
-
-                            <NavLink isActive={props.currentPage === "contact"} link="/contact" label="Contact" />
+                            {navItems}
                         </ul>
                     </div>
                 </nav>

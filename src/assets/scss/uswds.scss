@@ -19,32 +19,6 @@ $theme-typeface-tokens: (
   )
 ) !default;
 
-$theme-font-barlow-condensed: (
-  dir: 'barlowcondensed',
-  roman: (
-    100: false,
-    200: false,
-    300: 'BarlowCondensed-Light',
-    400: 'BarlowCondensed-Regular',
-    500: false,
-    600: false,
-    700: 'BarlowCondensed-Bold',
-    800: false,
-    900: false,
-  ),
-  italic: (
-    100: false,
-    200: false,
-    300: 'BarlowCondensed-LightItalic',
-    400: 'BarlowCondensed-Italic',
-    500: false,
-    600: false,
-    700: 'BarlowCondensed-BoldItalic',
-    800: false,
-    900: false,
-  ),
-);
-
 @font-face {
     font-family: BarlowCondensed;
     src: url(../fonts/barlowcondensed/BarlowCondensed-Bold.ttf);
@@ -131,10 +105,6 @@ $theme-font-type-sans: "public-sans";
     background-color: $unity-pink;
 }
 
-.bg-unity-home {
-    background-image: url("../img/_A3A3537_CMYK\ 1.png") !important;
-}
-
 .bg-unity-about {
     background-image: url("../img/_A3A3659_CMYK\ 1.png") !important;
 }
@@ -183,14 +153,6 @@ $theme-font-type-sans: "public-sans";
     padding-top: 30px;
 }
 
-.text-public-sans {
-    font-family: PublicSans !important;
-}
-
-.h4 {
-    margin-bottom: 0px !important;
-}
-
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
 
 .usa-button {
@@ -205,3 +167,6 @@ $theme-font-type-sans: "public-sans";
     background-color: $unity-red-adj;
 }
 
+.usa-prose {
+    font-family: PublicSans;
+}

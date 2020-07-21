@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import BlueSection from '../components/BlueSection';
 import Footer from '../components/Footer';
+import Button from '../components/Button';
 
 export default function Contact(props) {
     return(
@@ -15,7 +16,10 @@ export default function Contact(props) {
             <main id="main-content" class={props.mainBg}>
                 <Hero link={props.heroLink} bgImg={props.heroBg}/>
   
-                <BlueSection heading={props.heading1} text={props.text1} buttonActive={props.buttonPresent}/>
+                <BlueSection>
+                    <h2 class="font-heading-xl margin-y-0 text-barlow-heading text-primary-darker">{props.heading1}</h2>
+                    <p class="usa-intro usa-prose">{props.text1}</p>
+                </BlueSection>
   
             </main>
 

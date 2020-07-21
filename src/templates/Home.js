@@ -6,6 +6,9 @@ import YellowSection from '../components/YellowSection';
 import Grid from '../components/Grid';
 import BlueSection from '../components/BlueSection';
 import Footer from '../components/Footer';
+import Button from '../components/Button';
+import YellowHeading from '../components/YellowHeading';
+import YellowParagraph from '../components/YellowParagraph';
 
 export default function Home(props) {
     return(
@@ -17,7 +20,17 @@ export default function Home(props) {
             <main id="main-content" class={props.mainBg}>
                 <Hero link={props.heroLink} bgImg={props.heroBg}/>
                 
-                <YellowSection heading={props.heading1} text={props.text1}/>
+                <YellowSection>
+                    
+                    <YellowHeading>
+                        {props.heading1}
+                    </YellowHeading>
+
+                    <YellowParagraph>
+                        {props.text1}
+                    </YellowParagraph>
+
+                </YellowSection>
     
                 <Grid 
                 img1={props.gridImg1} alt1={props.gridAlt1} heading1={props.gridHeading1} text1={props.gridText1}
@@ -25,9 +38,12 @@ export default function Home(props) {
                 img3={props.gridImg3} alt3={props.gridAlt3} heading3={props.gridHeading3} text3={props.gridText3}
                 img4={props.gridImg4} alt4={props.gridAlt4} heading4={props.gridHeading4} text4={props.gridText4}
                 />
-  
-                <BlueSection heading={props.heading2} text={props.text2} 
-                buttonActive={props.buttonPresent} buttonLink={props.buttonLink} buttonText={props.buttonText}/>
+
+                <BlueSection>
+                    <h2 class="font-heading-xl margin-y-0 text-barlow-heading text-primary-darker">{props.heading2}</h2>
+                    <p class="usa-intro usa-prose">{props.text2}</p>
+                    <Button buttonLink={props.buttonLink}>{props.buttonText}</Button>
+                </BlueSection>
   
             </main>
 

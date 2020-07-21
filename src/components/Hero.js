@@ -1,10 +1,10 @@
 import React from 'react';
 import Button from './Button';
+import HomeImg from "../assets/img/_A3A3537_CMYK\ 1.png";
 
 export default function Hero(props) {
-    let imgClassName = "usa-hero "+props.bgImg
     return(
-        <section class={imgClassName} aria-label="Introduction">
+        <section class="usa-hero" aria-label="Introduction" style={{ backgroundImage: `url(${HomeImg})` }}>
             <div class="grid-container">
                 <div class="usa-hero__callout">
                     <h1 class="usa-hero__heading">
@@ -12,7 +12,7 @@ export default function Hero(props) {
                         <br/><span class="text-accent-cool">A Guide to LGBTQI+ Workplace Inclusivity</span> 
                         </span>
                     </h1>
-                    <Button buttonActive={true} buttonLink={props.link} buttonText="Download Report"/>
+                    <Button buttonActive={true} buttonLink={props.link}>Download Report</Button>
                 </div>
             </div>
         </section>  
