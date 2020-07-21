@@ -60,6 +60,7 @@ $theme-font-barlow-condensed: (
 // $theme-font-serif-custom-stack: BarlowCondensed;
 // $theme-font-sans-custom-stack: BarlowCondensed;
 $theme-font-type-serif: "barlow-condensed";
+$theme-font-type-sans: "public-sans";
 
 .bg-white {
     background-color: white;
@@ -184,6 +185,10 @@ $theme-font-type-serif: "barlow-condensed";
 
 .text-public-sans {
     font-family: PublicSans !important;
+}
+
+.h4 {
+    margin-bottom: 0px !important;
 }
 
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
