@@ -6,7 +6,6 @@ import MOCTOLogo from '../assets/img/MOCTO.png';
 
 export default function AgencyGrid(props) {
     return(
-    <div class="grid-row grid-gap bg-unity-purple text-white">
         <div class="usa-footer__secondary-section bg-unity-purple text-white">
         <div class="grid-container bg-unity-purple text-white">
             <div class="grid-row grid-gap">
@@ -21,13 +20,10 @@ export default function AgencyGrid(props) {
                     <a href="https://www1.nyc.gov/site/fund/index.page"><img class="agency-item agency-adjustment" src={MayorsFundLogo} alt=""/></a>
 
                     <div class="agency-item">
-                        <p>Website created with the support of</p>
+                        <p style={{whiteSpace: 'nowrap'}}>Website created with the support of</p>
                         <a href="http://nyc.gov/cto"><img src={MOCTOLogo} alt=""/></a>
                     </div> 
                 </div>
-
-                <p/>
-                    
                 <p class="footer-text">
                     © 2020 City of New York. All Rights Reserved.
                     <br/>
@@ -37,7 +33,6 @@ export default function AgencyGrid(props) {
         </div>    
     </div>
 
-    </div>
     );
 }
 
