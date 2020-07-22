@@ -14,7 +14,7 @@ export default function Hero(props) {
                         <br/><span className="text-accent-cool">A Guide to LGBTQI+ Workplace Inclusivity</span> 
                         </span>
                     </h1>
-                    <Button buttonActive={true} buttonLink={props.link}>Download Report</Button>
+                    <Button buttonActive={true} buttonLink="/">Download Report</Button>
                 </div>
             </div>
         </div>  
