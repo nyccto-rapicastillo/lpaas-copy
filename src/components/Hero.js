@@ -1,20 +1,22 @@
 import React from 'react';
 import Button from './Button';
-import HomeImg from "../assets/img/_A3A3537_CMYK\ 1.png";
+
+import { useTranslation } from 'react-i18next';
+import { LANGUAGES } from '../i18n/config';
 
 export default function Hero(props) {
-    console.log(HomeImg);
+    const { i18n, t } = useTranslation();
 
     return(
         <div className="usa-hero" aria-label="Introduction" style={{ backgroundImage: `url('${props.bgImg}')`}}>
             <div className="grid-container">
                 <div className="usa-hero__callout">
                     <h1 className="usa-hero__heading">
-                        <span className="usa-hero__heading--alt text-barlow-logo text-unity-blue">Work It, NYC
-                        <br/><span className="text-accent-cool">A Guide to LGBTQI+ Workplace Inclusivity</span> 
+                        <span className="usa-hero__heading--alt text-barlow-logo text-unity-blue">{t('workItNYC')}
+                        <br/><span className="text-accent-cool">{t('inclusivityGuide')}</span> 
                         </span>
                     </h1>
-                    <Button buttonActive={true} buttonLink="/">Download Report</Button>
+                    <Button buttonActive={true} buttonLink="/">{t('downloadReport')}</Button>
                 </div>
             </div>
         </div>  
