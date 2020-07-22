@@ -1,7 +1,7 @@
 import i18next from 'i18next';
 import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import { initReactI18nextModule } from 'react-i18next';
+import { initReactI18next } from 'react-i18next';
 
 export const LANGUAGES = [
   {lang: "ar", name: "العربية", direction: "rtl"},
@@ -22,7 +22,7 @@ export const LANGUAGES = [
 i18next
     .use(Backend)
     .use(LanguageDetector)
-    .use(initReactI18nextModule)
+    .use(initReactI18next)
     .init({
     fallbackLng: 'en',
     resources: LANGUAGES.reduce((prev, curr)=>{ 
