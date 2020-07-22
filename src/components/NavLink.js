@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export default function NavLink(props) {
     return(
         <li class="usa-nav__primary-item">

@@ -1,8 +1,6 @@
 import React from 'react';
-import PageTemplate from './PageTemplate';
-import YellowSection from '../components/YellowSection';
-import Paragraph from '../components/Paragraph';
-import Heading from '../components/Heading';
+import { PageTemplate, YellowSection, Paragraph, Heading } from '../components';
+
 
 import { useTranslation } from 'react-i18next';
 

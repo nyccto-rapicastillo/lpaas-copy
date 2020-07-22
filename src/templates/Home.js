@@ -1,15 +1,6 @@
 import React from 'react';
-import GovBanner from '../components/GovBanner';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import YellowSection from '../components/YellowSection';
-import Grid from '../components/Grid';
-import BlueSection from '../components/BlueSection';
-import Footer from '../components/Footer';
-import Button from '../components/Button';
-import Heading from '../components/Heading';
-import Paragraph from '../components/Paragraph';
-import GridSquare from '../components/GridSquare';
+
+import { PageTemplate, YellowSection, Grid, BlueSection, Button, Heading, Paragraph, GridSquare } from '../components';
 
 import HomeImg from "../assets/img/_A3A3537_CMYK\ 1.png";
 import CircleImg1 from "../assets/img/GridImage1.png";
@@ -19,7 +10,6 @@ import CircleImg4 from "../assets/img/GridImage4.png";
 
 import { useTranslation } from 'react-i18next';
 import { LANGUAGES } from '../i18n/config';
-import PageTemplate from './PageTemplate';
 
 export default function Home(props) {
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import FooterNav from './FooterNav';
-import AgencyGrid from './AgencyGrid';
+import { FooterNav, AgencyGrid } from '../components';
 
 export default function Footer(props) {
     return(

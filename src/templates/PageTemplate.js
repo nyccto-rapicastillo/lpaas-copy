@@ -1,9 +1,6 @@
 import React from 'react';
 
-import GovBanner from '../components/GovBanner';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Footer from '../components/Footer';
+import { GovBanner, Header, Hero, Footer } from '../components';
 
 export default function PageTemplate(props) {
     return (

@@ -1,6 +1,8 @@
 import React from 'react';
 import NYCLogo from '../assets/img/nyc.png';
+
 import { useTranslation } from 'react-i18next';
+import { LANGUAGES } from '../i18n/config';
 
 export default function GovBanner() {
     const { i18n, t } = useTranslation();

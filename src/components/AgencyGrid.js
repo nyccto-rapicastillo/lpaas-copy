@@ -1,10 +1,16 @@
 import React from 'react';
+
 import UnityLogo from '../assets/img/nyc_unity_logo.png';
 import CYELogo from '../assets/img/NYCYE.png';
 import MayorsFundLogo from '../assets/img/mayorsfund.png';
 import MOCTOLogo from '../assets/img/MOCTO.png';
 
+import { useTranslation } from 'react-i18next';
+import { LANGUAGES } from '../i18n/config';
+
 export default function AgencyGrid(props) {
+    const { i18n, t } = useTranslation();
+
     return(
         <div class="usa-footer__secondary-section bg-unity-purple text-white">
         <div class="grid-container bg-unity-purple text-white">
@@ -15,7 +21,7 @@ export default function AgencyGrid(props) {
                     </a>
 
                     <div class=" mobile-lg:grid-col-4 desktop:grid-col-3">
-                        <p>A collaboration of</p>
+                        <p>{t('collaboration')}</p>
                         <a href="https://cye.cityofnewyork.us/">
                             <img src={CYELogo} alt="" style={{maxWidth: 200}} />
                         </a>
@@ -27,14 +33,14 @@ export default function AgencyGrid(props) {
                     </a>
 
                     <div className="mobile-lg:grid-col-4 desktop:grid-col-3">
-                        <p style={{whiteSpace: 'nowrap'}}>Website created with the support of</p>
+                        <p style={{whiteSpace: 'nowrap'}}>{t('websiteSupport')}</p>
                         <a href="http://nyc.gov/cto"><img src={MOCTOLogo} style={{maxWidth: 200}} alt=""/></a>
                     </div> 
                 </div>
                 <p class="footer-text">
-                    © 2020 City of New York. All Rights Reserved.
+                    {t('allRightsReserved')}
                     <br/>
-                    NYC is a trademark and service mark of the City of New York
+                    {t('tradeMark')}
                 </p>
             </div>
         </div>    
