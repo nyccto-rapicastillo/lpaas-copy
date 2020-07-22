@@ -6,28 +6,31 @@ import MOCTOLogo from '../assets/img/MOCTO.png';
 
 export default function AgencyGrid(props) {
     return(
-    <div class="grid-row grid-gap bg-unity-purple text-white">
         <div class="usa-footer__secondary-section bg-unity-purple text-white">
         <div class="grid-container bg-unity-purple text-white">
             <div class="grid-row grid-gap">
-                <div class="agency-grid footer-text">
-                    <a href="https://growingupnyc.cityofnewyork.us/generationnyc/topics/lgbtq/"><img class="agency-item agency-adjustment-first" src={UnityLogo} alt=""/></a>
+                <div class="agency-grid footer-text grid-row grid-gap">
+                    <a className="mobile-lg:grid-col-4 desktop:grid-col-3" href="https://growingupnyc.cityofnewyork.us/generationnyc/topics/lgbtq/">
+                        <img class="agency-item agency-adjustment-first" src={UnityLogo} alt=""/>
+                    </a>
 
-                    <div class="agency-item">
+                    <div class=" mobile-lg:grid-col-4 desktop:grid-col-3">
                         <p>A collaboration of</p>
-                        <a href="https://cye.cityofnewyork.us/"><img src={CYELogo} alt=""/></a>
+                        <a href="https://cye.cityofnewyork.us/">
+                            <img src={CYELogo} alt="" style={{maxWidth: 200}} />
+                        </a>
                     </div>
                                 
-                    <a href="https://www1.nyc.gov/site/fund/index.page"><img class="agency-item agency-adjustment" src={MayorsFundLogo} alt=""/></a>
+                    <a className="mobile-lg:grid-col-4 desktop:grid-col-3"
+                        href="https://www1.nyc.gov/site/fund/index.page">
+                        <img class="" src={MayorsFundLogo} alt="" style={{maxWidth: 200, marginBottom: -2}} />
+                    </a>
 
-                    <div class="agency-item">
-                        <p>Website created with the support of</p>
-                        <a href="http://nyc.gov/cto"><img src={MOCTOLogo} alt=""/></a>
+                    <div className="mobile-lg:grid-col-4 desktop:grid-col-3">
+                        <p style={{whiteSpace: 'nowrap'}}>Website created with the support of</p>
+                        <a href="http://nyc.gov/cto"><img src={MOCTOLogo} style={{maxWidth: 200}} alt=""/></a>
                     </div> 
                 </div>
-
-                <p/>
-                    
                 <p class="footer-text">
                     © 2020 City of New York. All Rights Reserved.
                     <br/>
@@ -37,7 +40,6 @@ export default function AgencyGrid(props) {
         </div>    
     </div>
 
-    </div>
     );
 }
 
