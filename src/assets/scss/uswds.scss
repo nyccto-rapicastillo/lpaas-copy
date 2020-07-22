@@ -121,8 +121,12 @@ $theme-font-type-sans: "public-sans";
     display: flex;
     flex-direction: row column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: nowrap;
+
+    a {
+        display: inline-block;
+    }
 }
 
 .agency-item {
