@@ -153,6 +153,10 @@ $theme-font-type-sans: "public-sans";
     padding-top: 30px;
 }
 
+.usa-footer__return-to-top {
+    background-color: transparent;
+}
+
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
 
 .usa-button {

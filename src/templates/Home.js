@@ -7,8 +7,8 @@ import Grid from '../components/Grid';
 import BlueSection from '../components/BlueSection';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
-import YellowHeading from '../components/YellowHeading';
-import YellowParagraph from '../components/YellowParagraph';
+import Heading from '../components/Heading';
+import Paragraph from '../components/Paragraph';
 
 export default function Home(props) {
     return(
@@ -17,18 +17,19 @@ export default function Home(props) {
 
             <Header currentPage={props.pageLabel}/>
     
-            <main id="main-content" class={props.mainBg}>
+            <main id="main-content" className={props.mainBg}>
                 <Hero link={props.heroLink} bgImg={props.heroBg}/>
                 
                 <YellowSection>
-                    
-                    <YellowHeading>
-                        {props.heading1}
-                    </YellowHeading>
+                    <div className="tablet:grid-col-4">
+                        <Heading style="margin-top-0 tablet:margin-bottom-0">
+                            {props.heading1}
+                        </Heading>
+                    </div>
 
-                    <YellowParagraph>
+                    <Paragraph style="tablet:grid-col-8">
                         {props.text1}
-                    </YellowParagraph>
+                    </Paragraph>
 
                 </YellowSection>
     
@@ -40,14 +41,21 @@ export default function Home(props) {
                 />
 
                 <BlueSection>
-                    <h2 class="font-heading-xl margin-y-0 text-barlow-heading text-primary-darker">{props.heading2}</h2>
-                    <p class="usa-intro usa-prose">{props.text2}</p>
+                    <Heading style="margin-y-0">
+                        {props.heading2}
+                    </Heading>
+
+                    <Paragraph style="usa-intro">
+                        {props.text2}
+                    </Paragraph>
+
                     <Button buttonLink={props.buttonLink}>{props.buttonText}</Button>
+
                 </BlueSection>
   
             </main>
 
-            <Footer returnBg={props.footerBg}/>
+            <Footer returnBg="bg-unity-blue"/>
 
         </div>
     );

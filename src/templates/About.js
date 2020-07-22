@@ -4,8 +4,8 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import YellowSection from '../components/YellowSection';
 import Footer from '../components/Footer';
-import YellowParagraph from '../components/YellowParagraph';
-import YellowHeading from '../components/YellowHeading';
+import Paragraph from '../components/Paragraph';
+import Heading from '../components/Heading';
 
 export default function About(props) {
     const YELLOW_SECTIONS = [
@@ -16,13 +16,15 @@ export default function About(props) {
 
     const yellowSections = YELLOW_SECTIONS.map((section) => 
     <YellowSection>
-        <YellowHeading>
-            {section.heading}
-        </YellowHeading>
+        <div className="tablet:grid-col-4">
+            <Heading style="margin-top-0 tablet:margin-bottom-0">
+                {section.heading}
+            </Heading>
+        </div>
 
-        <YellowParagraph>
+        <Paragraph style="tablet:grid-col-8">
             {section.text}
-        </YellowParagraph>
+        </Paragraph>
 
     </YellowSection>)
 
@@ -32,7 +34,7 @@ export default function About(props) {
 
             <Header currentPage={props.pageLabel}/>
     
-            <main id="main-content" class={props.mainBg}>
+            <main id="main-content" className={props.mainBg}>
                 <Hero link={props.heroLink} bgImg={props.heroBg}/>
                 
                 {yellowSections}

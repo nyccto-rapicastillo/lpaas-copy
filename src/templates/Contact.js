@@ -4,21 +4,27 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import BlueSection from '../components/BlueSection';
 import Footer from '../components/Footer';
-import Button from '../components/Button';
+import Heading from '../components/Heading';
+import Paragraph from '../components/Paragraph';
 
 export default function Contact(props) {
     return(
-        <div>
+        <div className={props.mainBg}>
             <GovBanner/>
 
             <Header currentPage={props.pageLabel}/>
     
-            <main id="main-content" class={props.mainBg}>
+            <main id="main-content" className={props.mainBg}>
                 <Hero link={props.heroLink} bgImg={props.heroBg}/>
   
                 <BlueSection>
-                    <h2 class="font-heading-xl margin-y-0 text-barlow-heading text-primary-darker">{props.heading1}</h2>
-                    <p class="usa-intro usa-prose">{props.text1}</p>
+                    <Heading style="margin-y-0">
+                        {props.heading1}
+                    </Heading>
+
+                    <Paragraph style="usa-intro">
+                        {props.text1}
+                    </Paragraph>
                 </BlueSection>
   
             </main>
