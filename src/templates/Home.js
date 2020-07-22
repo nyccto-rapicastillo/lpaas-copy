@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { PageTemplate, YellowSection, Grid, BlueSection, Button, Heading, Paragraph, GridSquare } from '../components';
+import PageTemplate from './PageTemplate';
+import { YellowSection, Grid, BlueSection, Button, Heading, Paragraph, GridSquare } from '../components';
 
 import HomeImg from "../assets/img/_A3A3537_CMYK\ 1.png";
 import CircleImg1 from "../assets/img/GridImage1.png";

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { BlueSection, Heading, Paragraph, PageTemplate } from '../components';
+import PageTemplate from './PageTemplate';
+import { BlueSection, Heading, Paragraph } from '../components';
 
 import ContactImg from "../assets/img/_A3A3388_CMYK 1.png";
 
