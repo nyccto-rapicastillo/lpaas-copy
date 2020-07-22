@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import Heading from '../components/Heading';
 import Paragraph from '../components/Paragraph';
 
-import ContactImg from "./assets/img/_A3A3388_CMYK 1.png";
+import ContactImg from "../assets/img/_A3A3388_CMYK 1.png";
 
 export default function Contact(props) {
     return(

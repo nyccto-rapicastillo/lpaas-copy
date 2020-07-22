@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import Paragraph from '../components/Paragraph';
 import Heading from '../components/Heading';
 
-import AboutImg from "./assets/img/_A3A3659_CMYK\ 1.png";
+import AboutImg from "../assets/img/_A3A3659_CMYK\ 1.png";
 
 export default function About(props) {
     const YELLOW_SECTIONS = [
