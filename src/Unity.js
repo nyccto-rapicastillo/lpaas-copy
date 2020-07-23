@@ -1,34 +1,35 @@
 import React from 'react';
-import Home from './templates/Home';
-import About from './templates/About';
-import Contact from './templates/Contact';
+
+import {
+  Home, About, Contact,
+} from './templates';
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route
-} from "react-router-dom";
+  Route,
+} from 'react-router-dom';
 
 export default (props) => (
   <Router>
-        <Switch>
-          <Route path="/" exact 
-            render={props => (
-              <Home/>
-            )}
-          />
+    <Switch>
+      <Route path="/" exact
+        render={(props) => (
+          <Home/>
+        )}
+      />
 
-          <Route path="/about" exact
-            render={props => (
-              <About/>
-              )}
-          />
+      <Route path="/about" exact
+        render={(props) => (
+          <About/>
+        )}
+      />
 
-        <Route path="/contact" exact
-            render={props => (
-              <Contact/>
-            )}
-          />
-        </Switch>
-      </Router>
+      <Route path="/contact" exact
+        render={(props) => (
+          <Contact/>
+        )}
+      />
+    </Switch>
+  </Router>
 );
