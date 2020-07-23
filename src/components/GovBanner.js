@@ -12,9 +12,9 @@ export default function GovBanner() {
     <div>
       <a className="usa-skipnav" href="#main-content">{t('skipContent')}</a>
       <section className="usa-banner bg-primary-darker"
-        aria-label="Official government website">
+        aria-label="Official government website" style={{height: "auto"}}>
         <div className="usa-accordion">
-          <header className="usa-banner__header" style={{height: 22}}>
+          <header className="usa-banner__header">
             <div className="usa-banner__inner">
               <div className="grid-col-fill tablet:grid-col-auto">
                 <p className="usa-banner__header-text text-white">
