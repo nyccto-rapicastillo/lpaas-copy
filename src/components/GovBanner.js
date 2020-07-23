@@ -11,14 +11,14 @@ export default function GovBanner() {
   return (
     <div>
       <a className="usa-skipnav" href="#main-content">{t('skipContent')}</a>
-      <section className="usa-banner bg-primary-darker"
+      <section className="usa-banner bg-primary-darker banner-adjustment"
         aria-label="Official government website">
-        <div className="usa-accordion banner-adjustment">
-          <header className="usa-banner__header">
+        <div className="usa-accordion">
+          <header className="usa-banner__header" style={{paddingBottom: 15}}>
             <div className="usa-banner__inner">
               <div className="grid-col-fill tablet:grid-col-auto">
                 <p className="usa-banner__header-text text-white">
-                  <a href="http://nyc.gov/">
+                  <a href="https://www1.nyc.gov/">
                     <img src={NYC} style={{paddingRight: 28}}/>
                   </a> 
                   {t('topNav')}

@@ -168,7 +168,8 @@ $theme-font-type-sans: "public-sans";
 
 .banner-adjustment {
     height: 22px;
-    padding-bottom: 15px !important;
+    min-height: 22px !important;
+    max-height: 24px !important;
 }
 
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
