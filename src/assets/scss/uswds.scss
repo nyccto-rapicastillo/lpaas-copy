@@ -161,6 +161,11 @@ $theme-font-type-sans: "public-sans";
     background-color: transparent;
 }
 
+.wrap-header {
+    height: auto;
+    overflow: hidden;
+}
+
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
 
 .usa-button {

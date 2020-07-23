@@ -17,7 +17,7 @@ export default function GovBanner() {
             <div className="usa-banner__inner">
               <div className="grid-col-fill tablet:grid-col-auto">
                 <p className="usa-banner__header-text text-white">
-                  <img src={NYCLogo}/> {t('topNav')}
+                  <img src={NYCLogo} style={{paddingRight: 50}}/> {t('topNav')}
                 </p>
               </div>
             </div>

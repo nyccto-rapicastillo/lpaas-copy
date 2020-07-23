@@ -24,12 +24,12 @@ export default function Header(props) {
   return (
     <div>
       <div className="usa-overlay"></div>
-      <header className="usa-header usa-header--extended bg-unity-blue">
+      <header className="usa-header usa-header--extended bg-unity-blue wrap-header">
         <div className="usa-navbar">
           <div className="usa-logo" id="extended-logo">
             <em className="usa-logo__text">
               <a href="/" title="Home" aria-label="Home"
-                className="text-primary-darker text-barlow-logo">
+                className="text-primary-darker text-barlow-logo" style={{overflow: "auto"}}>
                 {t('fullTitle')}
               </a>
             </em>
