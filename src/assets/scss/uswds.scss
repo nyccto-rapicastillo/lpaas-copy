@@ -162,7 +162,7 @@ $theme-font-type-sans: "public-sans";
 }
 
 .wrap-header {
-    height: auto;
+    height: auto !important;
     overflow: hidden;
 }
 

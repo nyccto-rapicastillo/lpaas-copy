@@ -29,7 +29,7 @@ export default function AgencyGrid(props) {
             </div>
 
             <a className="mobile-lg:grid-col-4 desktop:grid-col-3"
-              href="https://www1.nyc.gov/site/fund/index.page">
+              href="http://nyc.gov/fund">
               <img src={MayorsFundLogo} alt=""
                 style={{maxWidth: 200, marginBottom: -2}} />
             </a>
