@@ -12,8 +12,8 @@ export default function GovBanner() {
     <div>
       <a className="usa-skipnav" href="#main-content">{t('skipContent')}</a>
       <section className="usa-banner bg-primary-darker"
-        aria-label="Official government website" style={{height: "auto"}}>
-        <div className="usa-accordion">
+        aria-label="Official government website">
+        <div className="usa-accordion banner-adjustment">
           <header className="usa-banner__header">
             <div className="usa-banner__inner">
               <div className="grid-col-fill tablet:grid-col-auto">
