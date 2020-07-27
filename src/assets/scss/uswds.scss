@@ -173,8 +173,11 @@ $theme-font-type-sans: "public-sans";
     max-height: 24px !important;
 }
 
-.usa-nav__link::after {
-    background-color: $theme-color-primary-darker !important;
+@media (min-width: 800px)
+{
+    .usa-nav__link::after {
+        background-color: $theme-color-primary-darker !important;
+    }
 }
 
 .usa-nav__link:hover {
