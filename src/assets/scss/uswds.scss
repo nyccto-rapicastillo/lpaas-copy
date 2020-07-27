@@ -198,3 +198,23 @@ $theme-font-type-sans: "public-sans";
 .usa-menu-btn:hover {
     background-color: $unity-red-adj;
 }
+
+@media (min-width: 800px) {
+    .nowrap {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 800px) {
+    .mobile-menu {
+        background-color: $unity-red-adj;
+    }
+
+    .usa-current {
+        color: $unity-orange-adj !important;
+    }
+
+    .usa-nav__link {
+        color: white !important;
+    }
+}

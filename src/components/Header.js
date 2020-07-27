@@ -25,9 +25,9 @@ export default function Header(props) {
     <div>
       <div className="usa-overlay"></div>
       <header className="usa-header usa-header--extended bg-unity-blue wrap-header">
-        <div className="usa-navbar wrap-header">
+        <div className="usa-navbar wrap-header" style={{borderBottom: "none"}}>
           <div className="usa-logo" id="extended-logo">
-            <em className="usa-logo__text">
+            <em className="usa-logo__text nowrap">
               <a href="/" title="Home" aria-label="Home"
                 className="text-primary-darker text-barlow-logo" style={{textAlign: "left", marginLeft: -3}}>
                 {t('fullTitle')}
@@ -36,7 +36,7 @@ export default function Header(props) {
           </div>
           <button className="usa-menu-btn">{t('menu')}</button>
         </div>
-        <nav aria-label="Primary navigation" className="usa-nav bg-white">
+        <nav aria-label="Primary navigation" className="usa-nav bg-white mobile-menu">
           <div className="usa-nav__inner">
             <button className="usa-nav__close">
               <img src="../assets/img/close.svg" role="img" alt="close"/>
