@@ -4,6 +4,8 @@ import NavLink from './NavLink';
 import {useTranslation} from 'react-i18next';
 import {LANGUAGES} from '../i18n/config';
 
+import CloseImg from '../assets/img/close.svg';
+
 export default function Header(props) {
   const {i18n, t} = useTranslation();
 
@@ -29,7 +31,7 @@ export default function Header(props) {
           <div className="usa-logo" id="extended-logo">
             <em className="usa-logo__text nowrap">
               <a href="/" title="Home" aria-label="Home"
-                className="text-primary-darker text-barlow-logo" style={{textAlign: "left", marginLeft: -3}}>
+                className="text-primary-darker text-barlow-logo" style={{textAlign: "left", marginLeft: -3, marginBottom: 5}}>
                 {t('fullTitle')}
               </a>
             </em>
@@ -39,7 +41,7 @@ export default function Header(props) {
         <nav aria-label="Primary navigation" className="usa-nav bg-white mobile-menu">
           <div className="usa-nav__inner">
             <button className="usa-nav__close">
-              <img src="../assets/img/close.svg" role="img" alt="close"/>
+              <img src={CloseImg} role="img" alt="close"/>
             </button>
             <ul className="usa-nav__primary usa-accordion">
               {navItems}

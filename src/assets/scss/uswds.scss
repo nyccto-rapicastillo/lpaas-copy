@@ -173,6 +173,13 @@ $theme-font-type-sans: "public-sans";
     max-height: 24px !important;
 }
 
+// @media (max-width: 800px) {
+
+//     .usa-current {
+//         color: $unity-orange-adj !important;
+//     }
+// }
+
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
 
 .usa-button {
@@ -210,11 +217,15 @@ $theme-font-type-sans: "public-sans";
         background-color: $unity-red-adj;
     }
 
-    .usa-current {
-        color: $unity-orange-adj !important;
-    }
-
     .usa-nav__link {
         color: white !important;
+    }
+    
+    .usa-nav__primary-item {
+        border: none;
+    }
+
+    .usa-nav__primary .usa-current::after {
+        background-color: $unity-orange-adj;
     }
 }
