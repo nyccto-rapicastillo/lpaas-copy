@@ -173,12 +173,13 @@ $theme-font-type-sans: "public-sans";
     max-height: 24px !important;
 }
 
-// @media (max-width: 800px) {
+.usa-nav__link::after {
+    background-color: $theme-color-primary-darker !important;
+}
 
-//     .usa-current {
-//         color: $unity-orange-adj !important;
-//     }
-// }
+.usa-nav__link:hover {
+    color: $theme-color-primary-darker !important;
+}
 
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
 
@@ -227,5 +228,9 @@ $theme-font-type-sans: "public-sans";
 
     .usa-nav__primary .usa-current::after {
         background-color: $unity-orange-adj;
+    }
+
+    .usa-nav__primary-item:hover {
+        color: $unity-orange-adj;
     }
 }

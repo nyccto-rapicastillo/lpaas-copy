@@ -4,7 +4,7 @@ import NavLink from './NavLink';
 import {useTranslation} from 'react-i18next';
 import {LANGUAGES} from '../i18n/config';
 
-import CloseImg from '../assets/img/close.svg';
+import CloseImg from '../assets/img/close-white.svg';
 
 export default function Header(props) {
   const {i18n, t} = useTranslation();
