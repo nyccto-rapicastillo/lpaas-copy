@@ -36,7 +36,7 @@ export default function AgencyGrid(props) {
 
             <div className="mobile-lg:grid-col-4 desktop:grid-col-3">
               <p style={{whiteSpace: 'nowrap'}}>{t('websiteSupport')}</p>
-              <a href="https://nyc.gov/cto"><img src={MOCTOLogo} style={{maxWidth: 200}} alt=""/></a>
+              <a href="http://nyc.gov/cto"><img src={MOCTOLogo} style={{maxWidth: 200}} alt=""/></a>
             </div>
           </div>
           <p className="footer-text">
