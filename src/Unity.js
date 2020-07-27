@@ -10,8 +10,11 @@ import {
   Route,
 } from 'react-router-dom';
 
+import GA from './utils/GoogleAnalytics';
+
 export default (props) => (
   <Router>
+    { GA.init() && <GA.RouteTracker/>}
     <Switch>
       <Route path="/" exact
         render={(props) => (
