@@ -66,7 +66,10 @@ export default function Home(props) {
           {t('fullReportDescription')}
         </Paragraph>
         <br/>
-        <Button buttonLink="#">{t('downloadReport')}</Button>
+        <Button link="/" 
+          onClick={()=> Event("DOWNLOAD", "Report downloaded", "DONWLOAD_REPOR")}>
+            {t('downloadReport')}
+        </Button>
       </BlueSection>
 
     </PageTemplate>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button';
+import Event from '../utils/GoogleAnalytics';
 
 import {useTranslation} from 'react-i18next';
 import {LANGUAGES} from '../i18n/config';
@@ -21,7 +22,10 @@ export default function Hero(props) {
               </span>
             </span>
           </h1>
-          <Button link="/">{t('downloadReport')}</Button>
+          <Button link="/" 
+          onClick={()=> Event("DOWNLOAD", "Report downloaded", "DONWLOAD_REPOR")}>
+            {t('downloadReport')}
+          </Button>
         </div>
       </div>
     </div>
