@@ -173,7 +173,7 @@ $theme-font-type-sans: "public-sans";
     max-height: 24px !important;
 }
 
-@media (min-width: 800px)
+@media (min-width: 870px)
 {
     .usa-nav__link::after {
         background-color: $theme-color-primary-darker !important;
@@ -210,13 +210,13 @@ $theme-font-type-sans: "public-sans";
     background-color: $unity-red-adj;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 870px) {
     .nowrap {
         white-space: nowrap;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 870px) {
     .mobile-menu {
         background-color: $unity-red-adj;
     }
@@ -235,6 +235,10 @@ $theme-font-type-sans: "public-sans";
 
     .usa-nav__primary-item:hover {
         color: $unity-orange-adj;
+    }
+
+    .usa-menu-btn {
+        align-self: flex-start;
     }
 
     .usa-accordion {
