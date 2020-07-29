@@ -173,32 +173,28 @@ $theme-font-type-sans: "public-sans";
     max-height: 24px !important;
 }
 
-
-
-@import '../../../node_modules/uswds/dist/scss/uswds.scss';
-
 .usa-button {
-    background-color: $unity-pink;
+    background-color: $unity-pink !important;
 }
 
 .usa-button:hover {
-    background-color: $unity-orange-adj;
+    background-color: $unity-orange-adj !important;
 }
 
 .usa-button:active {
-    background-color: $unity-orange-active;
+    background-color: $unity-orange-active !important;
 }
 
 .usa-prose {
-    font-family: PublicSans;
+    font-family: PublicSans !important;
 }
 
 .usa-menu-btn {
-    background-color: $unity-orange-active;
+    background-color: $unity-orange-active !important;
 }
 
 .usa-menu-btn:hover {
-    background-color: $unity-orange-active;
+    background-color: $unity-orange-active !important;
 }
 
 @media (min-width: 910px)
@@ -212,13 +208,13 @@ $theme-font-type-sans: "public-sans";
     }
 
     .nowrap {
-        white-space: nowrap;
+        white-space: nowrap !important;
     }
 }
 
 @media (max-width: 910px) {
     .mobile-menu {
-        background-color: $unity-orange-active;
+        background-color: $unity-orange-active !important;
     }
 
     .usa-nav__link {
@@ -230,15 +226,15 @@ $theme-font-type-sans: "public-sans";
     }
     
     .usa-nav__primary-item {
-        border: none;
+        border: none !important;
     }
 
     .usa-nav__primary .usa-current::after {
-        background-color: $unity-orange-adj;
+        background-color: $unity-orange-adj !important;
     }
 
     .usa-nav__primary-item:hover {
-        color: $unity-orange-adj;
+        color: $unity-orange-adj !important;
     }
 
     .usa-menu-btn {
@@ -262,3 +258,5 @@ $theme-font-type-sans: "public-sans";
     }
     
 }
+
+@import '../../../node_modules/uswds/dist/scss/uswds.scss';
