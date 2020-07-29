@@ -7,7 +7,7 @@ $theme-color-accent-cool: #E070A3;
 $unity-pink: #D93778;
 $unity-orange-adj: #E07616;
 $unity-blue-adj: #6ACDE8;
-$unity-red-adj: #D34200;
+$unity-orange-active: #D34200;
 $unity-yellow: #FAE64C;
 $unity-purple: #7E4E96;
 
@@ -178,10 +178,10 @@ $theme-font-type-sans: "public-sans";
     .usa-nav__link::after {
         background-color: $theme-color-primary-darker !important;
     }
-}
 
-.usa-nav__link:hover {
-    color: $theme-color-primary-darker !important;
+    .usa-nav__link:hover {
+        color: $theme-color-primary-darker !important;
+    }
 }
 
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
@@ -195,7 +195,7 @@ $theme-font-type-sans: "public-sans";
 }
 
 .usa-button:active {
-    background-color: $unity-red-adj;
+    background-color: $unity-orange-active;
 }
 
 .usa-prose {
@@ -203,11 +203,11 @@ $theme-font-type-sans: "public-sans";
 }
 
 .usa-menu-btn {
-    background-color: $unity-red-adj;
+    background-color: $unity-orange-active;
 }
 
 .usa-menu-btn:hover {
-    background-color: $unity-red-adj;
+    background-color: $unity-orange-active;
 }
 
 @media (min-width: 870px) {
@@ -218,11 +218,15 @@ $theme-font-type-sans: "public-sans";
 
 @media (max-width: 870px) {
     .mobile-menu {
-        background-color: $unity-red-adj;
+        background-color: $unity-orange-active;
     }
 
     .usa-nav__link {
         color: white !important;
+    }
+
+    .usa-nav__link:hover {
+        color: $unity-orange-active !important;
     }
     
     .usa-nav__primary-item {
