@@ -236,4 +236,21 @@ $theme-font-type-sans: "public-sans";
     .usa-nav__primary-item:hover {
         color: $unity-orange-adj;
     }
+
+    .usa-accordion {
+        height: 100%;
+        .usa-banner__header {
+            min-height: auto!important;
+            height:100%;
+            padding-bottom: 0!important;
+            padding-top: 0!important;
+    
+            .usa-banner__inner {
+                height: 100%;
+                align-items: center;
+            }
+
+        }
+    }
+    
 }
