@@ -69,7 +69,7 @@ export default function Home(props) {
         </Paragraph>
         <br/>
         <Button link="/" 
-          onClick={()=> Event("DOWNLOAD", "Report downloaded", "DONWLOAD_REPOR")}>
+          onClick={()=> Event("DOWNLOAD", "Report downloaded", "DONWLOAD_REPORT")}>
             {t('downloadReport')}
         </Button>
       </BlueSection>

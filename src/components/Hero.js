@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import Button from './Button';
 import Event from '../utils/GoogleAnalytics';
 
@@ -23,7 +24,11 @@ export default function Hero(props) {
             </span>
           </h1>
           <Button link="/" 
-          onClick={()=> Event("DOWNLOAD", "Report downloaded", "DONWLOAD_REPOR")}>
+          onClick={()=> ReactGA.event({
+            category: "Button",
+            action: "Download Report",
+            transport: "beacon"
+          })}>
             {t('downloadReport')}
           </Button>
         </div>
