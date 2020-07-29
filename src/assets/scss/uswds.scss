@@ -173,16 +173,7 @@ $theme-font-type-sans: "public-sans";
     max-height: 24px !important;
 }
 
-@media (min-width: 870px)
-{
-    .usa-nav__link::after {
-        background-color: $theme-color-primary-darker !important;
-    }
 
-    .usa-nav__link:hover {
-        color: $theme-color-primary-darker !important;
-    }
-}
 
 @import '../../../node_modules/uswds/dist/scss/uswds.scss';
 
@@ -210,13 +201,22 @@ $theme-font-type-sans: "public-sans";
     background-color: $unity-orange-active;
 }
 
-@media (min-width: 870px) {
+@media (min-width: 910px)
+{
+    .usa-nav__link::after {
+        background-color: $theme-color-primary-darker !important;
+    }
+
+    .usa-nav__link:hover {
+        color: $theme-color-primary-darker !important;
+    }
+
     .nowrap {
         white-space: nowrap;
     }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 910px) {
     .mobile-menu {
         background-color: $unity-orange-active;
     }
