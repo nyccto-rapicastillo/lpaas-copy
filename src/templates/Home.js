@@ -10,6 +10,8 @@ import CircleImg2 from '../assets/img/GridImage2.png';
 import CircleImg3 from '../assets/img/GridImage3.png';
 import CircleImg4 from '../assets/img/GridImage4.png';
 
+import Event from '../utils/GoogleAnalytics';
+
 import {useTranslation} from 'react-i18next';
 import {LANGUAGES} from '../i18n/config';
 
