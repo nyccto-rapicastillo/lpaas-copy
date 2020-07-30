@@ -9,7 +9,7 @@ export default function GovBanner() {
   const {i18n, t} = useTranslation();
 
   return (
-    <div>
+    <div class="govbanner">
       <a className="usa-skipnav" href="#main-content">{t('skipContent')}</a>
       <section className="usa-banner bg-primary-darker banner-adjustment"
         aria-label="Official government website">

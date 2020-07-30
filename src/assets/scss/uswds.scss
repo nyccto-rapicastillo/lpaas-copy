@@ -197,6 +197,12 @@ $theme-font-type-sans: "public-sans";
     background-color: $unity-orange-active !important;
 }
 
+@media (max-width: 370px) {
+    .govbanner {
+        visibility: hidden;
+    }
+}
+
 @media (min-width: 910px)
 {
     .usa-nav__link::after {
