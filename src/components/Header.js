@@ -31,7 +31,7 @@ export default function Header(props) {
           <div className="usa-logo" id="extended-logo">
             <em className="usa-logo__text nowrap">
               <a href="/" title="Home" aria-label="Home"
-                className="text-primary-darker text-barlow-logo" style={{textAlign: "left", marginLeft: -3, marginBottom: 5}}>
+                className="text-primary-darker text-barlow-logo" style={{textAlign: "left", marginLeft: -3, alignSelf: "center"}}>
                 {t('fullTitle')}
               </a>
             </em>
