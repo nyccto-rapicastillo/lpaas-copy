@@ -26,8 +26,7 @@ export default function Hero(props) {
           <Button link="/" 
           onClick={()=> ReactGA.event({
             category: "Button",
-            action: "Download Report",
-            transport: "beacon"
+            action: "Download Report"
           })}>
             {t('downloadReport')}
           </Button>

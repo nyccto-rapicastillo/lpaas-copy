@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 
 import PageTemplate from './PageTemplate';
 import {YellowSection, Grid, BlueSection,
@@ -9,8 +10,6 @@ import CircleImg1 from '../assets/img/GridImage1.png';
 import CircleImg2 from '../assets/img/GridImage2.png';
 import CircleImg3 from '../assets/img/GridImage3.png';
 import CircleImg4 from '../assets/img/GridImage4.png';
-
-import Event from '../utils/GoogleAnalytics';
 
 import {useTranslation} from 'react-i18next';
 import {LANGUAGES} from '../i18n/config';
@@ -69,7 +68,10 @@ export default function Home(props) {
         </Paragraph>
         <br/>
         <Button link="/" 
-          onClick={()=> Event("DOWNLOAD", "Report downloaded", "DONWLOAD_REPORT")}>
+          onClick={()=> ReactGA.event({
+            category: "Button",
+            action: "Download Report"
+          })}>
             {t('downloadReport')}
         </Button>
       </BlueSection>
