@@ -1,5 +1,5 @@
 import React from 'react';
-import GoogleAnalytics from '../utils/GoogleAnalytics';
+import { logEvent } from '../utils/GoogleAnalytics';
 
 import PageTemplate from './PageTemplate';
 import {YellowSection, Grid, BlueSection,
@@ -67,8 +67,8 @@ export default function Home(props) {
           {t('fullReportDescription')}
         </Paragraph>
         <br/>
-        <Button link="/" 
-          onClick={()=> GoogleAnalytics.logEvent("Button Click", "User downloaded report")}>
+        <Button link="" 
+          onClick={()=> logEvent("Button Click", "User downloaded report")}>
             {t('downloadReport')}
         </Button>
       </BlueSection>

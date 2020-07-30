@@ -78,6 +78,14 @@ const Event = (category, action, label) => {
     });
   };
 
+
+const logEvent = (cat, act) => {
+    ReactGA.event({
+        category: cat,
+        action: act
+    });
+}
+
 export default {
     GoogleAnalytics,
     Event,
@@ -85,3 +93,7 @@ export default {
     init
 };
 
+
+export { 
+    logEvent
+};
