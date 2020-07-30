@@ -1,6 +1,6 @@
 import React from 'react';
-import GA from './utils/GoogleAnalytics';
 import Button from './Button';
+import GA from '../utils/GoogleAnalytics';
 
 import {useTranslation} from 'react-i18next';
 import {LANGUAGES} from '../i18n/config';

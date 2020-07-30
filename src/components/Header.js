@@ -27,7 +27,7 @@ export default function Header(props) {
     <div>
       <div className="usa-overlay"></div>
       <header className="usa-header usa-header--extended bg-unity-blue wrap-header">
-        <div className="usa-navbar wrap-header" style={{borderBottom: "none"}}>
+        <div className="usa-navbar wrap-header" style={{borderBottom: "none", display: "flex", alignItems: "center"}}>
           <div className="usa-logo" id="extended-logo">
             <em className="usa-logo__text nowrap">
               <a href="/" title="Home" aria-label="Home"

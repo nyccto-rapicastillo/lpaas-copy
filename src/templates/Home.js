@@ -1,5 +1,5 @@
 import React from 'react';
-import GoogleAnalytics from './utils/GoogleAnalytics';
+import GoogleAnalytics from '../utils/GoogleAnalytics';
 
 import PageTemplate from './PageTemplate';
 import {YellowSection, Grid, BlueSection,
