@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactGA from 'react-ga';
+import GoogleAnalytics from './utils/GoogleAnalytics';
 import Button from './Button';
-import Event from '../utils/GoogleAnalytics';
 
 import {useTranslation} from 'react-i18next';
 import {LANGUAGES} from '../i18n/config';
@@ -24,10 +23,7 @@ export default function Hero(props) {
             </span>
           </h1>
           <Button link="/" 
-          onClick={()=> ReactGA.event({
-            category: "Button",
-            action: "Download Report"
-          })}>
+          onClick={()=> GoogleAnalytics.logEvent("Button Click", "User downloaded report")}>
             {t('downloadReport')}
           </Button>
         </div>

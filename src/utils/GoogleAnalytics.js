@@ -32,6 +32,13 @@ class GoogleAnalytics extends Component {
         ReactGA.pageview(page);
     }
 
+    logEvent (cat, act) {
+        ReactGA.event({
+            category: cat,
+            action: act
+        });
+    }
+
     render () {
         return null;
     }

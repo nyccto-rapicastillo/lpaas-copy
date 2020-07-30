@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactGA from 'react-ga';
+import GoogleAnalytics from './utils/GoogleAnalytics';
 
 import PageTemplate from './PageTemplate';
 import {YellowSection, Grid, BlueSection,
@@ -68,10 +68,7 @@ export default function Home(props) {
         </Paragraph>
         <br/>
         <Button link="/" 
-          onClick={()=> ReactGA.event({
-            category: "Button",
-            action: "Download Report"
-          })}>
+          onClick={()=> GoogleAnalytics.logEvent("Button Click", "User downloaded report")}>
             {t('downloadReport')}
         </Button>
       </BlueSection>
