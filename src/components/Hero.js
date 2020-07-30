@@ -22,7 +22,7 @@ export default function Hero(props) {
               </span>
             </span>
           </h1>
-          <Button link="/" 
+          <Button link="http://nyc.gov/cto" 
           onClick={()=> GoogleAnalytics.logEvent("Button Click", "User downloaded report")}>
             {t('downloadReport')}
           </Button>

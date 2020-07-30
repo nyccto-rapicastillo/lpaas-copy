@@ -67,7 +67,7 @@ export default function Home(props) {
           {t('fullReportDescription')}
         </Paragraph>
         <br/>
-        <Button link="" 
+        <Button link="http://nyc.gov/cto" 
           onClick={()=> logEvent("Button Click", "User downloaded report")}>
             {t('downloadReport')}
         </Button>
