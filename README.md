@@ -14,6 +14,10 @@ To load the site locally, run **`yarn start`** to run the web app in development
 
 To experiment with style changes, particularly if you intend to edit the `styles.scss` file, run **`gulp`** while running `yarn start`.
 
+## Thanks
+
+The Mayor's Office of the CTO would like to thank [Shreya Chowdhary](https://github.com/18chowdhary) for their significant contributions to this project as a summer Fellow in 2020.
+
 ## Contact
 
 If you have questions about the code, or the project at large, email digital@cto.nyc.gov.
