@@ -1,7 +1,8 @@
 import React from 'react';
-import NavLink from './NavLink';
-
+import { Link } from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
+
+import NavLink from './NavLink';
 import {LANGUAGES} from '../i18n/config';
 
 import CloseImg from '../assets/img/close-white.svg';
@@ -30,10 +31,10 @@ export default function Header(props) {
         <div className="usa-navbar wrap-header" style={{borderBottom: "none", display: "flex", alignItems: "center"}}>
           <div className="usa-logo" id="extended-logo">
             <em className="usa-logo__text nowrap">
-              <a href="/" title="Home" aria-label="Home"
+              <Link to="/" title="Home" aria-label="Home"
                 className="text-primary-darker text-barlow-logo" style={{textAlign: "left", marginLeft: -3, alignSelf: "center"}}>
                 {t('fullTitle')}
-              </a>
+              </Link>
             </em>
           </div>
           <button className="usa-menu-btn">{t('menu')}</button>
