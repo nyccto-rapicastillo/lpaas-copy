@@ -84,16 +84,12 @@ const logEvent = (cat, act) => {
         category: cat,
         action: act
     });
-}
+};
 
 export default {
     GoogleAnalytics,
     Event,
     RouteTracker,
-    init
-};
-
-
-export { 
+    init,
     logEvent
 };

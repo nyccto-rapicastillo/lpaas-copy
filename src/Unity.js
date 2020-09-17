@@ -15,10 +15,12 @@ import {
 } from 'react-router-dom';
 
 import GA from './utils/GoogleAnalytics';
+import ScrollToTop from './utils/ScrollToTop';
 
 export default (props) => (
-  <Router>
+  <Router basename="/">
     { GA.init() && <GA.RouteTracker/>}
+    <ScrollToTop/>
     <Switch>
       <Route path="/" exact
         render={(props) => (

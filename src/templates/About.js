@@ -13,7 +13,7 @@ import {HeadingLeftLayout, Paragraph, Heading} from '../components';
 import AboutImg from '../assets/img/_A3A3659_CMYK\ 1.png';
 
 export default function About(props) {
-  const {i18n, t} = useTranslation();
+  const {t} = useTranslation();
   
   // The text for each section within the page
   const YELLOW_SECTIONS = [
@@ -23,19 +23,19 @@ export default function About(props) {
   ];
 
   // Renders each section
-  const yellowSections = YELLOW_SECTIONS.map((section) =>
+  const yellowSections = YELLOW_SECTIONS.map((section, i) =>
     // Color the section yellow //
-    <HeadingLeftLayout bg="bg-unity-yellow">
+    <HeadingLeftLayout key={`section-${i}`} bg="bg-unity-yellow">
 
       {/* Heading, floating to the left */}
       <div className="tablet:grid-col-4">
-        <Heading style="margin-top-0 tablet:margin-bottom-0">
+        <Heading className="margin-top-0 tablet:margin-bottom-0">
           {section.heading}
         </Heading>
       </div>
 
       {/* Paragraph */}
-      <Paragraph style="tablet:grid-col-8">
+      <Paragraph className="tablet:grid-col-8">
         {section.text}
       </Paragraph>
 

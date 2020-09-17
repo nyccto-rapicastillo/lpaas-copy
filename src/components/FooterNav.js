@@ -4,13 +4,13 @@
 
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {LANGUAGES} from '../i18n/config';
+// import {LANGUAGES} from '../i18n/config';
 
 // Import composite componentss
 import FooterNavLink from './FooterNavLink';
 
 export default function FooterNav(props) {
-  const {i18n, t} = useTranslation();
+  const {t} = useTranslation();
 
   // Information for all the links in the nav
   const FOOTER_LINKS = [
@@ -23,7 +23,7 @@ export default function FooterNav(props) {
 
   // Renders each link
   const footerNavLinks = FOOTER_LINKS.map((item) =>
-    <FooterNavLink link={item.link}>{item.label}</FooterNavLink>);
+    <FooterNavLink key={`footer-link-${item.label}`} link={item.link}>{item.label}</FooterNavLink>);
 
   return (
     <div className="usa-footer__primary-section">

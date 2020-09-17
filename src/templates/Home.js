@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import { logEvent } from '../utils/GoogleAnalytics';
+import GoogleAnalytics from '../utils/GoogleAnalytics';
 import {useTranslation} from 'react-i18next';
 import {LANGUAGES} from '../i18n/config';
 
@@ -31,13 +31,13 @@ export default function Home(props) {
 
         {/* Heading */}
         <div className="tablet:grid-col-4">
-          <Heading style="margin-top-0 tablet:margin-bottom-0">
+          <Heading className="margin-top-0 tablet:margin-bottom-0">
             {t('manualNeed')}
           </Heading>
         </div>
 
         {/* Body */}
-        <Paragraph style="tablet:grid-col-8">
+        <Paragraph className="tablet:grid-col-8">
           {t('manualNeedDescription')}
         </Paragraph>
 
@@ -79,20 +79,20 @@ export default function Home(props) {
       <HeadingTopLayout bg="bg-unity-blue">
 
         {/* Heading */}
-        <Heading style="margin-y-0">
+        <Heading className="margin-y-0">
           {t('fullReport')}
         </Heading>
 
         {/* Paragraph */}
         <br/>
-        <Paragraph style="usa-intro">
+        <Paragraph className="usa-intro">
           {t('fullReportDescription')}
         </Paragraph>
 
         {/* Button, with Google Analytics tracking */}
         <br/>
-        <Button link="http://nyc.gov/cto" 
-          onClick={()=> logEvent("Button Click", "User downloaded report")}>
+        <Button link="https://www1.nyc.gov/assets/lgbtqwork/downloads/unityproject_workforcemanual_v4.pdf" 
+          onClick={()=> GoogleAnalytics.logEvent("Button Click", "User downloaded report")}>
             {t('downloadReport')}
         </Button>
         

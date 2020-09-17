@@ -8,7 +8,7 @@
 
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {LANGUAGES} from '../i18n/config';
+// import {LANGUAGES} from '../i18n/config';
 import GoogleAnalytics from '../utils/GoogleAnalytics';
 
 
@@ -16,7 +16,7 @@ import GoogleAnalytics from '../utils/GoogleAnalytics';
 import Button from './Button';
 
 export default function Hero(props) {
-  const {i18n, t} = useTranslation();
+  const {t} = useTranslation();
 
   return (
     <div className="usa-hero" aria-label="Introduction"
@@ -36,7 +36,7 @@ export default function Hero(props) {
           </h1>
 
           {/* Button, with tracking connected to Google Analyics */}
-          <Button link="http://nyc.gov/cto" 
+          <Button link="https://www1.nyc.gov/assets/lgbtqwork/downloads/unityproject_workforcemanual_v4.pdf" 
           onClick={()=> GoogleAnalytics.logEvent("Button Click", "User downloaded report")}>
             {t('downloadReport')}
           </Button>

@@ -9,12 +9,12 @@ import React from 'react';
 import NavLink from './NavLink';
 
 import {useTranslation} from 'react-i18next';
-import {LANGUAGES} from '../i18n/config';
+// import {LANGUAGES} from '../i18n/config';
 
 import CloseImg from '../assets/img/close-white.svg';
 
 export default function Header(props) {
-  const {i18n, t} = useTranslation();
+  const {t} = useTranslation();
 
   // Information for all the links in the navigation bar
   const NAV_LINKS = [
@@ -26,7 +26,8 @@ export default function Header(props) {
   // Renders each link in the navigation bar, checking if the link points to the current page
   const navItems = NAV_LINKS.map((item) =>
     <NavLink
-      isActive = {`${props.currentPage}` == `${item.label}`}
+      key={`link-${item.label}`}
+      isActive = {`${props.currentPage}` === `${item.label}`}
       link={item.link}>{item.label}</NavLink>,
   );
 
@@ -36,7 +37,7 @@ export default function Header(props) {
 
         {/* Close Button */}
         <button className="usa-nav__close">
-          <img src={CloseImg} role="img" alt="close"/>
+          <img src={CloseImg} alt="close"/>
         </button>
 
         {/* Links */}

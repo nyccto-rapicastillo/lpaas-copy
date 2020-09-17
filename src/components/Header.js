@@ -4,13 +4,13 @@
 
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {LANGUAGES} from '../i18n/config';
+// import {LANGUAGES} from '../i18n/config';
 
 // Import composite components
 import HeaderNav from './HeaderNav';
 
 export default function Header(props) {
-  const {i18n, t} = useTranslation();
+  const {t} = useTranslation();
 
   return (
     <div>

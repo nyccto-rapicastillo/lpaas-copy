@@ -23,11 +23,11 @@ export default function GovBanner(props) {
               <div className="grid-col-fill tablet:grid-col-auto">
                 <p className="usa-banner__header-text text-white">
 
-                  <a href="https://www1.nyc.gov/" class="usa-banner__nyc-logo">
-                    <img src={NYC} style={{paddingRight: 28}}/>
+                  <a href="https://www1.nyc.gov/" className="usa-banner__nyc-logo">
+                    <img src={NYC} alt="NYC City Logo" style={{paddingRight: 28}}/>
                   </a>
 
-                  <span class="govbanner">{t('topNav')}</span>
+                  <span className="govbanner">{t('topNav')}</span>
 
                 </p>
               </div>

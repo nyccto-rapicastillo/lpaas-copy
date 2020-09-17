@@ -23,24 +23,24 @@ export default function Contact(props) {
       <HeadingTopLayout bg="bg-unity-blue">
 
         {/* Heading */}
-        <Heading style="margin-y-0">
+        <Heading className="margin-y-0">
           {t('contactUs')}
         </Heading>
 
         <br/>
 
         {/* Body */}
-        <Paragraph style="usa-intro">
+        <Paragraph className="usa-intro">
 
           {t('feedback')}
 
           {/* Unity Project contact info */}
-          <p/><b>NYC Unity Project</b>
+          <br/><br/><b>NYC Unity Project</b>
           <br/><a href="http://nyc.gov/unityproject">http://nyc.gov/unityproject</a>
           <br/>Twitter: <a href="https://twitter.com/NYCUnityProject">@NYCUnityProject</a>
 
           {/* CYE contact info */}
-          <p/><b>NYC Center for Youth Employment</b>
+          <br/><br/><b>NYC Center for Youth Employment</b>
           <br/><a href="http://nyc.gov/cye">http://nyc.gov/cye</a>
           <br/>Twitter: <a href="https://twitter.com/NYCCYE">@NYCCYE</a>
 
