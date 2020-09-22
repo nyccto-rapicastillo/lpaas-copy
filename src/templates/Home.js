@@ -12,10 +12,9 @@ import CircleImg3 from '../assets/img/GridImage3.png';
 import CircleImg4 from '../assets/img/GridImage4.png';
 
 import {useTranslation} from 'react-i18next';
-import {LANGUAGES} from '../i18n/config';
 
 export default function Home(props) {
-  const {i18n, t} = useTranslation();
+  const {t} = useTranslation();
 
   return (
     <PageTemplate page="Home" mainBg="bg-unity-yellow"
@@ -67,7 +66,7 @@ export default function Home(props) {
           {t('fullReportDescription')}
         </Paragraph>
         <br/>
-        <Button link="http://nyc.gov/cto" 
+        <Button link="https://www1.nyc.gov/assets/lgbtqwork/downloads/unityproject_workforcemanual_v4.pdf"
           onClick={()=> logEvent("Button Click", "User downloaded report")}>
             {t('downloadReport')}
         </Button>

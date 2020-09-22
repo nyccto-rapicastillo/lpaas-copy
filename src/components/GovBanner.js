@@ -19,7 +19,7 @@ export default function GovBanner() {
               <div className="grid-col-fill tablet:grid-col-auto">
                 <p className="usa-banner__header-text text-white">
                   <a href="https://www1.nyc.gov/" class="usa-banner__nyc-logo">
-                    <img src={NYC} style={{paddingRight: 28}}/>
+                    <img src={NYC} alt="NYC City Logo" style={{paddingRight: 28}}/>
                   </a> 
                   {t('topNav')}
                 </p>

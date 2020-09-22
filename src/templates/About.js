@@ -8,7 +8,7 @@ import {useTranslation} from 'react-i18next';
 import AboutImg from '../assets/img/_A3A3659_CMYK\ 1.png';
 
 export default function About(props) {
-  const {i18n, t} = useTranslation();
+  const {t} = useTranslation();
 
   const YELLOW_SECTIONS = [
     {heading: t('unityAbout'), text: t('unityDescription')},
@@ -16,8 +16,8 @@ export default function About(props) {
     {heading: t('acknowledgements'), text: t('fullAcknowledgements')},
   ];
 
-  const yellowSections = YELLOW_SECTIONS.map((section) =>
-    <YellowSection>
+  const yellowSections = YELLOW_SECTIONS.map((section, i) =>
+    <YellowSection key={`section-${i}`}>
       <div className="tablet:grid-col-4">
         <Heading style="margin-top-0 tablet:margin-bottom-0">
           {section.heading}
