@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import GoogleAnalytics from '../utils/GoogleAnalytics';
+import {logEvent} from '../utils/GoogleAnalytics';
 
 import {useTranslation} from 'react-i18next';
 
@@ -22,7 +22,7 @@ export default function Hero(props) {
             </span>
           </h1>
           <Button link="https://www1.nyc.gov/assets/lgbtqwork/downloads/unityproject_workforcemanual_v4.pdf"
-          onClick={()=> GoogleAnalytics.logEvent("Button Click", "User downloaded report")}>
+          onClick={()=> logEvent("Button Click", "User downloaded report")}>
             {t('downloadReport')}
           </Button>
         </div>

@@ -21,12 +21,12 @@ export default function Home(props) {
       hero={HomeImg} returnBg="bg-unity-blue">
       <YellowSection>
         <div className="tablet:grid-col-4">
-          <Heading style="margin-top-0 tablet:margin-bottom-0">
+          <Heading className="margin-top-0 tablet:margin-bottom-0">
             {t('manualNeed')}
           </Heading>
         </div>
 
-        <Paragraph style="tablet:grid-col-8">
+        <Paragraph className="tablet:grid-col-8">
           {t('manualNeedDescription')}
         </Paragraph>
       </YellowSection>
@@ -58,11 +58,11 @@ export default function Home(props) {
       </Grid>
 
       <BlueSection>
-        <Heading style="margin-y-0">
+        <Heading className="margin-y-0">
           {t('fullReport')}
         </Heading>
         <br/>
-        <Paragraph style="usa-intro">
+        <Paragraph className="usa-intro">
           {t('fullReportDescription')}
         </Paragraph>
         <br/>

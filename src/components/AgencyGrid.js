@@ -6,10 +6,9 @@ import MayorsFundLogo from '../assets/img/mayorsfund.png';
 import MOCTOLogo from '../assets/img/MOCTO.png';
 
 import {useTranslation} from 'react-i18next';
-import {LANGUAGES} from '../i18n/config';
 
 export default function AgencyGrid(props) {
-  const {i18n, t} = useTranslation();
+  const {t} = useTranslation();
 
   return (
     <div className="usa-footer__secondary-section bg-unity-purple text-white">

@@ -19,12 +19,12 @@ export default function About(props) {
   const yellowSections = YELLOW_SECTIONS.map((section, i) =>
     <YellowSection key={`section-${i}`}>
       <div className="tablet:grid-col-4">
-        <Heading style="margin-top-0 tablet:margin-bottom-0">
+        <Heading className="margin-top-0 tablet:margin-bottom-0">
           {section.heading}
         </Heading>
       </div>
 
-      <Paragraph style="tablet:grid-col-8">
+      <Paragraph className="tablet:grid-col-8">
         {section.text}
       </Paragraph>
 
