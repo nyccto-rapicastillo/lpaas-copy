@@ -1,6 +1,5 @@
 export {default as AgencyGrid} from './AgencyGrid';
 export {default as BlueSection} from './BlueSection';
-export {default as HeadingTopLayout} from './HeadingTopLayout';
 export {default as Button} from './Button';
 export {default as Footer} from './Footer';
 export {default as FooterNav} from './FooterNav';
@@ -15,4 +14,3 @@ export {default as Img} from './Img';
 export {default as NavLink} from './NavLink';
 export {default as Paragraph} from './Paragraph';
 export {default as YellowSection} from './YellowSection';
-export {default as HeadingLeftLayout} from './HeadingLeftLayout';
