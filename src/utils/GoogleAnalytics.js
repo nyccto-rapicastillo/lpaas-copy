@@ -84,7 +84,7 @@ const logEvent = (cat, act) => {
         category: cat,
         action: act
     });
-}
+};
 
 export default {
     GoogleAnalytics,

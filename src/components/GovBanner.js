@@ -1,15 +1,13 @@
 import React from 'react';
-import NYCLogo from '../assets/img/nyc.png';
 import NYC from '../assets/img/nyc.svg';
 
 import {useTranslation} from 'react-i18next';
-import {LANGUAGES} from '../i18n/config';
 
 export default function GovBanner() {
-  const {i18n, t} = useTranslation();
+  const {t} = useTranslation();
 
   return (
-    <div class="govbanner">
+    <div className="govbanner">
       <a className="usa-skipnav" href="#main-content">{t('skipContent')}</a>
       <section className="usa-banner bg-primary-darker banner-adjustment"
         aria-label="Official government website">
@@ -18,8 +16,8 @@ export default function GovBanner() {
             <div className="usa-banner__inner">
               <div className="grid-col-fill tablet:grid-col-auto">
                 <p className="usa-banner__header-text text-white">
-                  <a href="https://www1.nyc.gov/" class="usa-banner__nyc-logo">
-                    <img src={NYC} style={{paddingRight: 28}}/>
+                  <a href="https://www1.nyc.gov/" className="usa-banner__nyc-logo">
+                    <img src={NYC} alt="NYC City Logo" style={{paddingRight: 28}}/>
                   </a> 
                   {t('topNav')}
                 </p>

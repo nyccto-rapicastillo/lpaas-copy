@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 
 import NavLink from './NavLink';
-import {LANGUAGES} from '../i18n/config';
 
 import CloseImg from '../assets/img/close-white.svg';
 
 export default function Header(props) {
-  const {i18n, t} = useTranslation();
+  const {t} = useTranslation();
 
   const NAV_LINKS = [
     {link: '/', label: t('home')},
@@ -18,7 +17,8 @@ export default function Header(props) {
 
   const navItems = NAV_LINKS.map((item) =>
     <NavLink
-      isActive = {`${props.currentPage}` == `${item.label}`}
+      key={`link-${item.label}`}
+      isActive = {`${props.currentPage}` === `${item.label}`}
       link={item.link}
       label={item.label}
     />,
@@ -42,7 +42,7 @@ export default function Header(props) {
         <nav aria-label="Primary navigation" className="usa-nav bg-white mobile-menu">
           <div className="usa-nav__inner">
             <button className="usa-nav__close">
-              <img src={CloseImg} role="img" alt="close"/>
+              <img src={CloseImg} alt="close"/>
             </button>
             <ul className="usa-nav__primary usa-accordion">
               {navItems}
