@@ -5,7 +5,7 @@ import PageTemplate from './PageTemplate';
 import {YellowSection, Grid, BlueSection,
   Button, Heading, Paragraph, GridSquare} from '../components';
 
-import HomeImg from '../assets/img/_A3A3537_CMYK\ 1.png';
+import HomeImg from '../assets/img/_A3A3537_CMYK 1.png';
 import CircleImg1 from '../assets/img/GridImage1.png';
 import CircleImg2 from '../assets/img/GridImage2.png';
 import CircleImg3 from '../assets/img/GridImage3.png';
