@@ -21,7 +21,7 @@ export default function Hero(props) {
               </span>
             </span>
           </h1>
-          <Button link="/DOH_Unity_Project_Workforce_Manual_v1c1.pdf"
+          <Button link="/DOH_Unity_Project_Workforce_Manual.pdf"
           onClick={()=> logEvent("Button Click", "User downloaded report")}>
             {t('downloadReport')}
           </Button>
