@@ -66,7 +66,7 @@ export default function Home(props) {
           {t('fullReportDescription')}
         </Paragraph>
         <br/>
-        <Button link="/DOH_Unity_Project_Workforce_Manual_v1c1.pdf"
+        <Button link="/DOH_Unity_Project_Workforce_Manual.pdf"
           onClick={()=> logEvent("Button Click", "User downloaded report")}>
             {t('downloadReport')}
         </Button>
