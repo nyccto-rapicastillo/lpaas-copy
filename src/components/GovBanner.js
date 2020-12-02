@@ -2,9 +2,15 @@ import React from 'react';
 import NYC from '../assets/img/nyc.svg';
 
 import {useTranslation} from 'react-i18next';
+import i18n from '../i18n/config';
+import { LANGUAGES } from '../i18n/config';
 
 export default function GovBanner() {
   const {t} = useTranslation();
+
+  const setLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <div className="govbanner">
@@ -22,6 +28,18 @@ export default function GovBanner() {
                   {t('topNav')}
                 </p>
               </div>
+              <div className='grid-col-fill'></div>
+                <ul className='usa-list usa-list--unstyled grid-row'>
+                  {
+                    LANGUAGES.map((item) => (
+                      <li><a href='#' className='grid-col text-white' style={{marginRight: 5}}
+                        onClick={()=>{
+                          setLanguage(item.lang)
+                        }}
+                      >{item.name}</a></li>
+                    ))
+                  }
+                </ul>
             </div>
           </header>
         </div>

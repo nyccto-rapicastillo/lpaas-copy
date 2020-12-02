@@ -4,7 +4,8 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
 export const LANGUAGES = [
-  {lang: "en", name: "English"}
+  {lang: "en", name: "English"},
+  {lang: "es", name: "Español"}
 ];
 
 i18next
