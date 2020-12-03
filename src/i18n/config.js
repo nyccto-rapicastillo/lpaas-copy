@@ -15,7 +15,7 @@ i18next
     .init({
     fallbackLng: 'en',
     resources: LANGUAGES.reduce((prev, curr)=>{ 
-        prev[curr.resource || curr.lang] = { translations: require(`../locales/${curr.lang}/lang.json`) };
+        prev[curr.resource || curr.lang] = { translations: require(`../locales/${curr.lang}/${curr.lang}.json`) };
         return prev;
     }, {}),
     whitelist: LANGUAGES.map((item)=>item.resource || item.lang),
